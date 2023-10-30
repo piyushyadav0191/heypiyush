@@ -39,11 +39,11 @@ type Site = {
   favicons: IconDescriptor[];
 };
 
-const prodBaseURL = "heypiyush.vercel.app";
+const prodBaseURL = "https://heypiyush.vercel.app";
 const devBaseURL = "http://localhost:3000";
 
 const site: Site = {
-  url: process.env.NODE_ENV === "production" ? prodBaseURL : devBaseURL,
+  url: "https://heypiyush.vercel.app",
   title: "Piyush",
   name: "Piyush",
   keywords: ["piyushyadav0191", "Next.js", "React", "TypeScript", "Node.js"],
