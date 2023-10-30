@@ -34,7 +34,7 @@ const Badge = ({ id, color, title }: Props) => {
   return (
     <span
       key={id}
-      className={`inline-block px-3 py-2 text-sm  font-semibold text-black dark:text-white rounded-full  hover:bg-opacity-10 border-2 ${colorClass} border-opacity-50 `}
+      className={`inline-block px-3 py-2 text-sm  font-semibold text-black dark:text-white rounded-full  hover:bg-opacity-10 border-2 ${colorClass} border-opacity-50 cursor-pointer `}
     >
       {title}
     </span>

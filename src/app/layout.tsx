@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteId: "1152256803746377730",
     creator: "@piyushyadav0191",
     creatorId: "1152256803746377730",
-    images: [`${site.url}/images/og.png`],
+    images: [`${site.url}/images/logo.png`],
   },
   keywords: site.keywords,
   creator: "piyush",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     locale: "en-US",
     images: [
       {
-        url: `${site.url}/images/og.png`,
+        url: `${site.url}/images/logo.png`,
         width: 1200,
         height: 630,
         alt: site.description,
