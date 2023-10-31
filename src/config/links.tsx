@@ -4,6 +4,7 @@ import {
   IconBrandLinkedin,
   IconBrandMedium,
   IconDeviceDesktop,
+  IconExposure,
   IconFlame,
   IconMessageCircle,
   IconPencil,
@@ -93,6 +94,11 @@ export const HEADER_LINKS: HeaderLinks = [
     icon: <IconFlame size={14} />,
     href: "/projects",
     text: "Projects",
+  },
+  {
+    icon: <IconExposure size={14} />,
+    href: "/experience",
+    text: "Experience",
   },
   {
     icon: <IconUserCircle size={14} />,
