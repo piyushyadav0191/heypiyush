@@ -1,3 +1,5 @@
+# Heypiyush
+
 Welcome to my personal blog repository! This repository houses the code for my blog, where I share my thoughts, projects, and insights. Feel free to explore and get inspired.
 
 ## ✨ Features
@@ -50,5 +52,3 @@ yarn dev
 ```
 
 The app will become available at `http://localhost:3000`.
-# heypiyush
-# Portfolio-2024
