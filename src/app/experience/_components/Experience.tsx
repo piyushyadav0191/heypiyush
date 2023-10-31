@@ -30,7 +30,7 @@ const Experience = () => {
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                 <Card.Link href={experience.link.url}>
-                  {experience.title} at {experience.company}
+                  {experience.title} at {experience.company} - {experience.location}
                 </Card.Link>
               </h2>
               <p className="text-sm text-zinc-600 dark:text-zinc-400">
