@@ -154,6 +154,10 @@ export const FOOTER_LINKS: FooterLinks = [
         href: "/projects",
         title: "Projects",
       },
+      {
+        href: "/experience",
+        title: "Experience",
+      },
     ],
   },
   {
