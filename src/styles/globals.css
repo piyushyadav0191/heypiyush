@@ -81,3 +81,10 @@
   backdrop-filter: blur(10px);
   background-color: transparent;
 }
+
+@media (max-width: 768px) {
+  /* Target the elements where you want to disable text selection */
+  .no-select {
+    user-select: none;
+  }
+}

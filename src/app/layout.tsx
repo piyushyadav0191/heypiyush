@@ -128,7 +128,7 @@ const RootLayout = (props: RootLayoutProps) => {
       suppressHydrationWarning
     >
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className="relative font-default">
+      <body className="relative font-default no-select">
         <Providers>
           <Header />
           <main
