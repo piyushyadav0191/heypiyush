@@ -77,7 +77,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="cc-bg blur-background mx-auto mt-12 w-4/5 w-full rounded-lg border bg-transparent p-8 text-white shadow-lg md:max-w-4xl">
+      <div className="cc-bg blur-background mx-auto mt-12 w-4/5 w-full rounded-lg border bg-transparent p-8 text-white shadow-lg ">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="mb-2 text-2xl font-bold text-black dark:text-white">
