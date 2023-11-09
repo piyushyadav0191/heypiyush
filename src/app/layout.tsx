@@ -139,7 +139,7 @@ const RootLayout = (props: RootLayoutProps) => {
           </main>
           <Toaster />
           <Footer />
-          <Analytics />
+          {/* <Analytics /> */}
           <Image
             width={1512}
             height={550}
