@@ -1,8 +1,21 @@
 export const experiences = [
   {
+    title: "SDE - I",
+    company: "Codemate",
+    date: "Nov 2023 - Present",
+    description: [
+      "Leveraged the Full stack technologies to engineer efficient, reusable, and reliable software solutions.",
+      "Partnered with diverse teams to conceptualize, design, and implement new features, ensuring seamless integration and adherence to high-quality code standards.",
+      "Actively participated in code reviews, offering constructive feedback to bolster code quality, maintainability, and scalability.",
+    ],
+    location: "Noida, UP,India",
+    link: { url: "https://www.codemate.ai/", label: "codemate" },
+    logo: "/images/exp/codemate.webp",
+  },
+  {
     title: "Full Stack Intern",
     company: "One oath",
-    date: "July 2023 - Present",
+    date: "July 2023 - October 2023",
     description: [
       "Spearheaded the development of microservices and user interface components, resulting in a 30% increase in user engagement for the client’s personality development system",
       "Developed a CI/CD workflow to automatically perform a set of actions daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues",

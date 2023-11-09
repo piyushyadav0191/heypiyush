@@ -9,6 +9,7 @@ import {
   IconMessageCircle,
   IconPencil,
   IconUserCircle,
+  IconAddressBook
 } from "@tabler/icons-react";
 
 /**
@@ -111,7 +112,7 @@ export const HEADER_LINKS: HeaderLinks = [
     text: "Uses",
   },
   {
-    icon: <IconDeviceDesktop size={14} />,
+    icon: <IconAddressBook size={14} />,
     href: "/contact",
     text: "Contact",
   },
