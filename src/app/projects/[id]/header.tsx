@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import site from "@/config/site";
 import getIconByName from "@/utils/get-icon-by-name";
+import Badge from "@/components/ui/Badge";
 
 const animation = {
   hide: {
@@ -25,7 +26,7 @@ const animation = {
 type HeaderProps = Project;
 
 const Header = (props: HeaderProps) => {
-  const { name, description, icon, homepage, github, repo } = props;
+  const { name, description, icon, homepage, github, repo, techstack } = props;
 
   // const Icon = getIconByName(icon)
 
@@ -69,6 +70,12 @@ const Header = (props: HeaderProps) => {
           {site.githubUsername}/{repo}
         </a>
       </motion.div>
+      <h1 className="text-2xl font-bold mt-2">Technology Used</h1>
+      <div className="flex flex-row gap-2">
+        {techstack.map((tech) => (
+          <Badge title={tech.label} key={tech._id} color="" borderColor="" id={tech._id} />
+        ))}
+      </div>
     </div>
   );
 };
