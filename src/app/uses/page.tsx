@@ -8,7 +8,7 @@ import getPage from '@/utils/get-page'
 // export const runtime = 'edge'
 const title = 'Uses'
 const description =
-  'These are the tools I currently use for developement and like every day.'
+  'These are the tools I currently use for developement and every day.'
 
 /**
  * The props of {@link UsesPage}.
@@ -58,8 +58,7 @@ const UsesPage = () => {
     <>
       <PageTitle
         title='Uses'
-        description='This is the equipment I currently use for gaming, programming, making
-        videos, and every day.'
+        description='These are the tools I currently use for developement and every day.'
       />
       <Mdx code={page.body.code} />
     </>
