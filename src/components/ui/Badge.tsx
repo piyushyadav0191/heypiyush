@@ -1,7 +1,7 @@
 "use client";
 
 type Props = {
-  id: number;
+  id: number | string;
   title: string;
   color: string;
   borderColor: string;
