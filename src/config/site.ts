@@ -44,10 +44,10 @@ const devBaseURL = "http://localhost:3000";
 
 const site: Site = {
   url: "https://heypiyush.vercel.app",
-  title: "Piyush",
-  name: "Piyush",
+  title: "Piyush Yadav",
+  name: "Piyush Yadav",
   keywords: ["piyushyadav0191", "Next.js", "React", "TypeScript", "Node.js"],
-  titleTemplate: "- Piyush",
+  titleTemplate: "- Piyush Yadav",
   description: "Piyush  • Student • Full-stack Developer",
   githubUsername: "piyushyadav0191",
   favicons: [

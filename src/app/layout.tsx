@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import Image from "next/image";
 
 import "@/styles/globals.css";
-import Analytics from "@/components/analytics";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { Toaster } from "sonner";
@@ -53,7 +52,7 @@ export const metadata: Metadata = {
     images: [`${site.url}/images/logo.png`],
   },
   keywords: site.keywords,
-  creator: "piyush",
+  creator: "Piyush Yadav",
   openGraph: {
     url: site.url,
     type: "website",
