@@ -10,6 +10,7 @@ import SignIn from './sign-in'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '../api/auth/[...nextauth]/route'
 import prisma from '@/lib/prisma'
+import PaginationControls from '@/components/PaginationControls'
 
 const title = 'Guestbook'
 const description = 'Sign my guestbook and share your idea.'
@@ -57,10 +58,15 @@ export const generateMetadata = async (
 
 export const dynamic = 'force-dynamic'
 
-const GuestbookPage = async () => {
+const GuestbookPage = async ({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) => {
+  const page = searchParams['page'] ?? '1'
+  const per_page = searchParams['per_page'] ?? '5'
+
+  const start = (Number(page) - 1) * Number(per_page) // 0 5 10..
+  const end = start + Number(per_page) // 5 10 15..
+
   const session = await getServerSession(authOptions)
   const user = session?.user
-
   const messages = await prisma.guestbook.findMany({
     orderBy: {
       created_at: 'desc'
@@ -74,6 +80,9 @@ const GuestbookPage = async () => {
     }
   })
 
+  const entries = messages.slice(start, end)
+
+
   return (
     <>
       <PageTitle
@@ -84,7 +93,7 @@ const GuestbookPage = async () => {
         <Pinned />
         {!user && <SignIn />}
         {user && <Form user={user} />}
-        {messages.map((message: any) => {
+        {entries.map((message: any) => {
           return (
             <Messages
               key={message.id}
@@ -95,6 +104,10 @@ const GuestbookPage = async () => {
             />
           )
         })}
+        <div className='flex justify-center mt-6'>
+
+          <PaginationControls hasNextPage={end < messages.length} hasPrevPage={start > 0} />
+        </div>
       </div>
     </>
   )
