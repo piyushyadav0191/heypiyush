@@ -70,8 +70,8 @@ const Header = (props: HeaderProps) => {
           {site.githubUsername}/{repo}
         </a>
       </motion.div>
-      <h1 className="text-2xl font-bold mt-2">Technology Used</h1>
-      <div className="flex flex-row gap-2">
+      <h1 className="text-2xl font-bold mt-2 ">Technology Used</h1>
+      <div className="flex flex-wrap md:flex-nowrap gap-2 ">
         {techstack.map((tech) => (
           <Badge title={tech.label} key={tech._id} color="" borderColor="" id={tech._id} />
         ))}
