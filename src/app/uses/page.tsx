@@ -8,7 +8,7 @@ import getPage from '@/utils/get-page'
 // export const runtime = 'edge'
 const title = 'Uses'
 const description =
-  'This is the equipment I currently use for gaming, programming, making videos, and every day.'
+  'These are the tools I currently use for developement and like every day.'
 
 /**
  * The props of {@link UsesPage}.
