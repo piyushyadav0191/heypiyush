@@ -89,7 +89,7 @@ const Contact = () => {
             </p>
             <button className="rounded border bg-inherit px-4 py-2 dark:border-white text-black shadow transition-colors duration-200 hover:bg-gray-100 hover:text-sky-500 dark:text-white dark:hover:text-black">
               <Link
-                href={`${process.env.NEXTAUTH_URL}/pdf/resume.pdf`}
+                href={`/pdf/resume.pdf`}
                 target="_blank"
                 className="animate-pulse"
               >
