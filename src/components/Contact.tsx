@@ -86,7 +86,7 @@ const Contact = () => {
             <p className="mb-4 text-sm text-black dark:text-white">
               Software Engineer
             </p>
-            <button className="rounded border bg-inherit px-4 py-2 text-black shadow transition-colors duration-200 hover:bg-gray-100 hover:text-sky-500 dark:text-white">
+            <button className="rounded border bg-inherit px-4 py-2 text-black shadow transition-colors duration-200 hover:bg-gray-100 hover:text-sky-500 dark:text-white dark:hover:text-black">
               <Link
                 href={`${process.env.NEXTAUTH_URL}/pdf/resume.pdf`}
                 target="_blank"
