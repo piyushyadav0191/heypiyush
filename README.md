@@ -14,6 +14,7 @@ Welcome to my personal Portfolio repository! This repository houses the code for
 - 🌗 Dark mode
 - 📈 SEO optimized with meta tags and JSON-LD
 - 📰 RSS feed
+- ✅ Pagination - Guestbook
 - 🗺 Sitemap
 - 📊 Umami Analytics
 - 🔎 Blog post search
