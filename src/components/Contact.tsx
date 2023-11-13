@@ -1,11 +1,6 @@
 "use client"
 
 import Link from "next/link";
-import {
-  IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-} from "@tabler/icons-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
@@ -36,7 +31,7 @@ const Contact = () => {
             <a
               href="mailto:piyushyadav0191@gmail.com?subject=Hi%20Piyush!"
               target="_blank"
-              className="sm:text-lg text-gray-600 font-semibold hover:text-red-600"
+              className="sm:text-lg text-gray-600 dark:text-gray-300 font-semibold hover:text-red-600"
             >
               piyushyadav0191@gmail.com
             </a>
@@ -49,7 +44,7 @@ const Contact = () => {
           <div className="flex flex-row gap-6">
             <a
               href="https://www.linkedin.com/in/piyushyadav0191/"
-              className="sm:text-lg text-gray-600 font-semibold hover:text-sky-600"
+              className="sm:text-lg text-gray-600 font-semibold dark:text-gray-300 hover:text-sky-600"
             >
               piyushyadav0191
             </a>
@@ -62,7 +57,7 @@ const Contact = () => {
           <div className="flex flex-row gap-6">
             <a
               href="https://medium.com/@piyushyadav0191"
-              className="sm:text-lg text-gray-600 font-semibold hover:text-violet-600"
+              className="sm:text-lg text-gray-600 font-semibold dark:text-gray-300 hover:text-violet-600"
             >
               piyushyadav0191
             </a>
@@ -75,7 +70,7 @@ const Contact = () => {
           <div className="flex flex-row gap-6">
             <a
               href="https://github.com/piyushyadav0191"
-              className="sm:text-lg text-gray-600 font-semibold hover:text-pink-600"
+              className="sm:text-lg text-gray-600 dark:text-gray-300 font-semibold hover:text-pink-600"
             >
               on Github
             </a>
