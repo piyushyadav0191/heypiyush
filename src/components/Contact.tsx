@@ -6,7 +6,6 @@ import Image from "next/image";
 
 const Contact = () => {
   const { theme } = useTheme()
-  console.log(theme)
   return (
     <div>
       <p className="sm:text-lg">

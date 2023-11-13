@@ -39,7 +39,7 @@ const UpdatedDate = (props: UpdatedDateProps) => {
 }
 
 const Messages = ({ body, created_at, created_by, image }: MessagesProps) => {
-  console.log(body)
+
   return (
     <div className='mt-10 flex flex-col gap-4'>
       <div className='rounded-lg border p-4'>
