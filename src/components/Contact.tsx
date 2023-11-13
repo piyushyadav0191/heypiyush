@@ -1,11 +1,17 @@
+"use client"
+
 import Link from "next/link";
 import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
 } from "@tabler/icons-react";
+import { useTheme } from "next-themes";
+import Image from "next/image";
 
 const Contact = () => {
+  const { theme } = useTheme()
+  console.log(theme)
   return (
     <div>
       <p className="sm:text-lg">
@@ -86,10 +92,11 @@ const Contact = () => {
             <p className="mb-4 text-sm text-black dark:text-white">
               Software Engineer
             </p>
-            <button className="rounded border bg-inherit px-4 py-2 text-black shadow transition-colors duration-200 hover:bg-gray-100 hover:text-sky-500 dark:text-white dark:hover:text-black">
+            <button className="rounded border bg-inherit px-4 py-2 dark:border-white text-black shadow transition-colors duration-200 hover:bg-gray-100 hover:text-sky-500 dark:text-white dark:hover:text-black">
               <Link
                 href={`${process.env.NEXTAUTH_URL}/pdf/resume.pdf`}
                 target="_blank"
+                className="animate-pulse"
               >
                 Resume
               </Link>
@@ -103,7 +110,11 @@ const Contact = () => {
               rel="noreferrer"
               className="hover:text-gray-200 "
             >
-              <IconBrandGithub size={44} color="red" />
+              {theme === "dark" ? (
+                <Image src={"/images/contact/github-white.svg"} height={30} width={30} alt="github" />
+              ) : (
+                <Image src={"/images/contact/github.svg"} height={30} width={30} alt="github" />
+              )}
             </a>
             <a
               href="https://www.linkedin.com/in/piyushyadav0191"
@@ -111,7 +122,11 @@ const Contact = () => {
               rel="noreferrer"
               className="hover:text-gray-200"
             >
-              <IconBrandLinkedin size={44} color="cyan" />
+              {theme === "dark" ? (
+                <Image src={"/images/contact/linkedin-white.svg"} height={30} width={30} alt="github" />
+              ) : (
+                <Image src={"/images/contact/linkedin.svg"} height={30} width={30} alt="github" />
+              )}
             </a>
             <a
               href="https://instagram.com/piyush.0191"
@@ -119,7 +134,11 @@ const Contact = () => {
               rel="noreferrer"
               className="hover:text-gray-200"
             >
-              <IconBrandInstagram size={44} color="yellow" />
+              {theme === "dark" ? (
+                <Image src={"/images/contact/instagram-white.svg"} height={30} width={30} alt="github" />
+              ) : (
+                <Image src={"/images/contact/instagram.svg"} height={30} width={30} alt="github" />
+              )}
             </a>
           </div>
         </div>
