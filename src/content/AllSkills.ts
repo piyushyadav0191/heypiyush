@@ -1,122 +1,128 @@
 export const AllSkills = [
   {
     id: 1,
-    title: 'NextJS 13',
+    title: "NextJS 13",
     color: "rose",
-    borderColor: "rose"
+    borderColor: "rose",
   },
   {
     id: 2,
-    title: 'React Native',
+    title: "React Native",
     color: "teal",
-    borderColor: "teal"
+    borderColor: "teal",
   },
   {
     id: 3,
-    title: 'Golang',
+    title: "Golang",
     color: "pink",
-    borderColor: "pink"
+    borderColor: "pink",
   },
   {
     id: 4,
-    title: 'Javascript',
+    title: "Javascript",
     color: "violet",
-    borderColor: "violet"
+    borderColor: "violet",
   },
   {
     id: 5,
-    title: 'Typescript',
+    title: "Typescript",
     color: "purple",
-    borderColor: "purple"
+    borderColor: "purple",
   },
   {
     id: 6,
-    title: 'HTML5',
+    title: "HTML5",
     color: "sky",
-    borderColor: "sky"
+    borderColor: "sky",
   },
   {
     id: 7,
-    title: 'CSS3',
+    title: "CSS3",
     color: "yellow",
-    borderColor: "yellow"
+    borderColor: "yellow",
   },
   {
     id: 8,
-    title: 'TailwindCSS',
+    title: "TailwindCSS",
     color: "green",
-    borderColor: "green"
+    borderColor: "green",
   },
   {
     id: 9,
-    title: 'NodeJS',
+    title: "NodeJS",
     color: "gray",
-    borderColor: "gray"
+    borderColor: "gray",
   },
   {
     id: 10,
-    title: 'MongoDB',
+    title: "MongoDB",
     color: "red",
-    borderColor: "red"
+    borderColor: "red",
   },
   {
     id: 11,
-    title: 'Express',
+    title: "Express",
     color: "indigo",
-    borderColor: "indigo"
+    borderColor: "indigo",
   },
   {
     id: 12,
-    title: 'Java',
+    title: "Java",
     color: "cyan",
-    borderColor: "cyan"
+    borderColor: "cyan",
   },
   {
     id: 13,
-    title: 'GraphQL',
+    title: "GraphQL",
     color: "rose",
-    borderColor: "rose"
+    borderColor: "rose",
   },
   {
     id: 14,
-    title: 'Git',
-   color: "teal",
-    borderColor: "teal"
+    title: "Git",
+    color: "teal",
+    borderColor: "teal",
   },
   {
     id: 15,
-    title: 'PostgreSQL',
-     color: "pink",
-    borderColor: "pink"
+    title: "PostgreSQL",
+    color: "pink",
+    borderColor: "pink",
   },
   {
     id: 16,
-    title: 'Prisma',
+    title: "Prisma",
     color: "violet",
-    borderColor: "violet"
+    borderColor: "violet",
   },
   {
     id: 17,
-    title: 'Zustand/ RTK',
+    title: "Zustand/ RTK",
     color: "purple",
-    borderColor: "purple"
+    borderColor: "purple",
   },
   {
     id: 18,
-    title: 'Linux',
+    title: "Linux",
     color: "Lime",
-    borderColor: "Lime"
+    borderColor: "Lime",
   },
   {
     id: 19,
-    title: 'Docker',
+    title: "Docker",
     color: "yellow",
-    borderColor: "yellow"
+    borderColor: "yellow",
   },
   {
     id: 20,
-    title: 'TRPC',
+    title: "TRPC",
     color: "lightBlue",
-    borderColor: "lightBlue"
+    borderColor: "lightBlue",
   },
-]
+  {
+    id: 21,
+    title: "NestJS",
+    color: "pink",
+    borderColor: "pink",
+  },
+];
