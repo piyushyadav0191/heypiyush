@@ -11,6 +11,7 @@ import site from "@/config/site";
 import cn from "@/utils/cn";
 
 import Providers from "./providers";
+import AIChatButton from "@/components/chatbot/AIChatButton";
 
 /**
  * The props of {@link RootLayout}.
@@ -129,6 +130,7 @@ const RootLayout = (props: RootLayoutProps) => {
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className="relative font-default no-select">
         <Providers>
+        <AIChatButton />
           <Header />
           <main
             id="skip-nav"
