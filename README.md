@@ -5,6 +5,8 @@ Welcome to my personal Portfolio repository! This repository houses the code for
 ## ✨ Features
 
 - ⚡️ Next.js 13.5.2 with App Router
+- 🤖 AI powered Bot
+- 👆 Redis
 - 📝 MDX + Contentlayer
 - 🎨 Tailwind CSS - for styling
 - 🌈 Radix UI - accessible UI components

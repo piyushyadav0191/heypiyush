@@ -130,7 +130,7 @@ const RootLayout = (props: RootLayoutProps) => {
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className="relative font-default no-select">
         <Providers>
-        <AIChatButton />
+       
           <Header />
           <main
             id="skip-nav"
@@ -157,6 +157,7 @@ const RootLayout = (props: RootLayoutProps) => {
             alt="Gradient background"
             priority
           />
+           <AIChatButton />
         </Providers>
       </body>
     </html>

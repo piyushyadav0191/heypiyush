@@ -5,7 +5,7 @@
   "description": "My personal website and blog built with TypeScript, Next.js, and Tailwind CSS",
   "type": "module",
   "scripts": {
-    "build": "npm run generate && next build",
+    "build": "npm run generate && npx prisma db push && next build",
     "generate": "npx tsx ./scripts/generate.ts",
     "dev": "next dev",
     "lint": "next lint",

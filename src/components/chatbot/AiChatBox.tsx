@@ -42,8 +42,8 @@ const AiChatBox = ({ onClose, open }: Props) => {
   return (
     <div
       className={cn(
-        "bottom-0 right-0 z-[9999]  w-full max-w-[500px] p-1 xl:right-36 ",
-        open ? "fixed" : "hidden"
+        "bottom-0 right-0  w-full max-w-[500px] p-1 xl:right-36 ",
+        open ? "fixed " : "hidden"
       )}
     >
       <button onClick={onClose} className="mb-1 ms-auto block">
