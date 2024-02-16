@@ -1,6 +1,7 @@
 import cn from "@/utils/cn";
 import { useChat, Message } from "ai/react";
 import { Bot, SendHorizonal, Trash, XCircle } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
@@ -74,7 +75,12 @@ const AiChatBox = ({ onClose, open }: Props) => {
           )}
           {!error && messages.length === 0 && (
             <div className="flex flex-col h-full items-center justify-center gap-3 text-center mx-8">
-              <Bot size={28} />
+              <Image
+              src={'/images/logo.png'}
+              width={55}
+              height={55}
+              alt='Piyush'
+            />
               <p className="text-lg  font-medium">
                 Send a message to start the AI chat
               </p>
@@ -125,6 +131,7 @@ type ChatMessageProps = {
 function ChatMessage({ message: { role, content } }: ChatMessageProps) {
   const isAiMessage = role === "assistant";
 
+
   return (
     <div
       className={cn(
@@ -132,11 +139,20 @@ function ChatMessage({ message: { role, content } }: ChatMessageProps) {
         isAiMessage ? "me-5 justify-start" : "ms-5 justify-end"
       )}
     >
-      {isAiMessage && <Bot className="mr-2 flex-none" />}
+      {isAiMessage && (
+        // <Bot className="mr-2 flex-none" />
+        <Image
+        src={'/images/logo.png'}
+        width={45}
+        height={45}
+        alt='Piyush'
+      />  
+        ) 
+      }
       <div
         className={cn(
           "rounded-md border px-3 py-2",
-          isAiMessage ? "bg-background" : "bg-foreground text-background"
+          isAiMessage ? "font-semibold hover:bg-opacity-10 border-2 hover:bg-rose-500 border-rose-600 border-opacity-50 cursor-pointer bg-background" : "bg-foreground text-background"
         )}
       >
         <ReactMarkdown
