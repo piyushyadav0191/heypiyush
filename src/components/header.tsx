@@ -11,6 +11,7 @@ import cn from '@/utils/cn'
 
 import ThemeSwitch from './theme-switch'
 import { Separator } from './ui/separator'
+import AIChatButton from './chatbot/AIChatButton'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false)
@@ -50,6 +51,7 @@ const Header = () => {
           <ThemeSwitch />
           <CommandMenu />
           <MobileNav />
+         
         </div>
       </header>
       <a

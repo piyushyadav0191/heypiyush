@@ -21,13 +21,13 @@ export const allProjects: Project[] = [
   {
     id: "1",
     type: "Project",
-    name: "Queue Overflow",
-    description: "A place where you can ask questions and give answers",
-    homepage: "https://queueoverflow-pro.vercel.app/",
-    github: "https://github.com/piyushyadav0191/Queue-Overflow",
-    icon: "/images/projects/icons/queue.png",
-    image: "/images/projects/queue.png",
-    repo: "Queue-Overflow",
+    name: "Farewello",
+    description: "Holiday management for mid-sized Organization",
+    homepage: "https://farewello.vercel.app/",
+    github: "https://github.com/piyushyadav0191/Farewello",
+    icon: "/images/projects/icons/farewello.png",
+    image: "/images/projects/farewello.png",
+    repo: "Farewello",
     techstack: [
       {
         id: "1",
@@ -47,23 +47,9 @@ export const allProjects: Project[] = [
       {
         id: "4",
         type: "Techstack",
-        label: "Server Actions",
+        label: "Next Auth",
       },
-      {
-        id: "5",
-        type: "Techstack",
-        label: "MongoDB",
-      },
-      {
-        id: "6",
-        type: "Techstack",
-        label: "Clerk",
-      },
-      {
-        id: "7",
-        type: "Techstack",
-        label: "Web hooks",
-      },
+      
     ],
   },
   {
@@ -110,6 +96,7 @@ export const allProjects: Project[] = [
       },
     ],
   },
+  
   {
     id: "3",
     type: "Project",
@@ -205,6 +192,54 @@ export const allProjects: Project[] = [
   {
     id: "5",
     type: "Project",
+    name: "Queue Overflow",
+    description: "A place where you can ask questions and give answers",
+    homepage: "https://queueoverflow-pro.vercel.app/",
+    github: "https://github.com/piyushyadav0191/Queue-Overflow",
+    icon: "/images/projects/icons/queue.png",
+    image: "/images/projects/queue.png",
+    repo: "Queue-Overflow",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS + TS + Node",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "TailwindCSS",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "Shadcn UI",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Server Actions",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "MongoDB",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "Clerk",
+      },
+      {
+        id: "7",
+        type: "Techstack",
+        label: "Web hooks",
+      },
+    ],
+  },
+  {
+    id: "6",
+    type: "Project",
     name: "Whatsapp Clone",
     description:
       "Whatsapp clone with all features from individual chats to group chat and chat to video call",
@@ -247,7 +282,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "6",
+    id: "7",
     type: "Project",
     name: "Modern Ecommerce",
     description: "E commerce website made with latest tech",
@@ -285,7 +320,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "7",
+    id: "8",
     type: "Project",
     name: "Modern Blog",
     description:
@@ -314,7 +349,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "8",
+    id: "9",
     type: "Project",
     name: "Code with us Editor",
     description:
@@ -348,7 +383,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "9",
+    id: "10",
     type: "Project",
     name: "Dashboard for Ecommerce",
     description: "Dashbaord to manage your ecommerce website with all features",
@@ -381,7 +416,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "10",
+    id: "11",
     type: "Project",
     name: "Darking Horse",
     description: "Colorful Dark theme for Vs code",
@@ -400,7 +435,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "11",
+    id: "12",
     type: "Project",
     name: "Share here",
     description:
