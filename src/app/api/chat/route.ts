@@ -1,32 +1,60 @@
-import { OpenAIStream, StreamingTextResponse } from "ai"
-import OpenAI from "openai"
-import { ChatCompletionMessageParam } from "openai/resources"
+import { LangChainStream,  StreamingTextResponse } from "ai";
+import { ChatOpenAI } from "@langchain/openai";
+import { ChatPromptTemplate } from "@langchain/core/prompts";
+import {createStuffDocumentsChain} from "langchain/chains/combine_documents"
+import { getVectorStore } from "@/lib/astradb";
+import { createRetrievalChain } from "langchain/chains/retrieval"
 
 export async function POST(req: Request) {
-        try {
-            const body = await req.json()
-            const messages = body.messages
+  try {
+    const body = await req.json();
+    // @ts-ignore
+    const messages = body.messages;
 
-            const openai = new OpenAI()
+    const { stream, handlers } = LangChainStream();
 
-            const systemMessage: ChatCompletionMessageParam = {
-                role: "system",
-                content: "you are a sarcasm bot. you answer all user questions in a sarcastic way"
-            }
+    const currentMessageContent = messages[messages.length - 1].content;
 
-            const response = await  openai.chat.completions.create({
-                model: "gpt-3.5-turbo",
-                stream: true,
-                messages: [systemMessage, ...messages]
-            })
+    const chatModel = new ChatOpenAI({
+      modelName: "gpt-3.5-turbo",
+      streaming: true,
+      callbacks: [handlers],
+      verbose: true
+    });
 
-            const stream = OpenAIStream(response)
+    const prompt = ChatPromptTemplate.fromMessages([
+      [
+        "system",
+        "You are a Piyush Bot for a personal portfolio website. You impersonate the website's owner" +
+        "Answer the user's questions based on below content"+
+        "whenever it makes sense, provide links to pages that contain more information about topic from given context"+
+        "Format your messages in markdown format.\n\n"+
+        "Context:\n{context}"
+      ],
+      ["user", "{input}"],
+    ]);
 
-            return new StreamingTextResponse(stream)
+   const combineDocsChain = await createStuffDocumentsChain({
+    llm: chatModel,
+    prompt
+   });
 
+   const retriever = await (await getVectorStore()).asRetriever();
 
-        } catch (error) {
-            console.log(error)
-            return Response.json({error: "Piyush something went wrong"}, {status: 500})
-        }
+   const retreivalChain = await createRetrievalChain({
+     combineDocsChain,
+     retriever,
+   })
+
+    retreivalChain.invoke({
+      input: currentMessageContent,
+    });
+    return new StreamingTextResponse(stream);
+  } catch (error) {
+    console.log(error);
+    return Response.json(
+      { error: "something went wrong" },
+      { status: 500 }
+    );
+  }
 }

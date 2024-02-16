@@ -34,6 +34,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "exclude": [
     "node_modules",
     "coverage"
