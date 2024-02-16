@@ -42,7 +42,7 @@ const AiChatBox = ({ onClose, open }: Props) => {
   return (
     <div
       className={cn(
-        "bottom-0 right-0 z-50 w-full max-w-[500px] p-1 xl:right-36 ",
+        "bottom-0 right-0 z-[9999]  w-full max-w-[500px] p-1 xl:right-36 ",
         open ? "fixed" : "hidden"
       )}
     >
@@ -152,7 +152,7 @@ function ChatMessage({ message: { role, content } }: ChatMessageProps) {
       <div
         className={cn(
           "rounded-md border px-3 py-2",
-          isAiMessage ? "font-semibold hover:bg-opacity-10 border-2 hover:bg-rose-500 border-rose-600 border-opacity-50 cursor-pointer bg-background" : "bg-foreground text-background"
+          isAiMessage ? "font-semibold hover:bg-opacity-10 border-2 hover:bg-rose-500 border-rose-600 border-opacity-50  bg-background" : "bg-foreground text-background"
         )}
       >
         <ReactMarkdown
@@ -161,7 +161,7 @@ function ChatMessage({ message: { role, content } }: ChatMessageProps) {
               <Link
                 {...props}
                 href={props.href ?? ""}
-                className="text-primary hover:underline"
+                className="text-primary underline"
               />
             ),
           }}
