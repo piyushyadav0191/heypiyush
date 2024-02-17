@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { HEADER_LINKS } from "@/config/links";
 import cn from "@/utils/cn";
+import AIChatButton from "./chatbot/AIChatButton";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -40,6 +41,7 @@ const Navbar = () => {
           </li>
         );
       })}
+    
     </ul>
   );
 };

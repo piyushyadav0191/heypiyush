@@ -1,0 +1,843 @@
+export const AllSkills = [
+  {
+    id: 1,
+    title: "NextJS 13",
+    color: "rose",
+    borderColor: "rose",
+  },
+  {
+    id: 2,
+    title: "React Native",
+    color: "teal",
+    borderColor: "teal",
+  },
+  {
+    id: 3,
+    title: "Golang",
+    color: "pink",
+    borderColor: "pink",
+  },
+  {
+    id: 4,
+    title: "Javascript",
+    color: "violet",
+    borderColor: "violet",
+  },
+  {
+    id: 5,
+    title: "Typescript",
+    color: "purple",
+    borderColor: "purple",
+  },
+  {
+    id: 6,
+    title: "HTML5",
+    color: "sky",
+    borderColor: "sky",
+  },
+  {
+    id: 7,
+    title: "CSS3",
+    color: "yellow",
+    borderColor: "yellow",
+  },
+  {
+    id: 8,
+    title: "TailwindCSS",
+    color: "green",
+    borderColor: "green",
+  },
+  {
+    id: 9,
+    title: "NodeJS",
+    color: "gray",
+    borderColor: "gray",
+  },
+  {
+    id: 10,
+    title: "MongoDB",
+    color: "red",
+    borderColor: "red",
+  },
+  {
+    id: 11,
+    title: "Express",
+    color: "indigo",
+    borderColor: "indigo",
+  },
+  {
+    id: 12,
+    title: "Java",
+    color: "cyan",
+    borderColor: "cyan",
+  },
+  {
+    id: 13,
+    title: "GraphQL",
+    color: "rose",
+    borderColor: "rose",
+  },
+  {
+    id: 14,
+    title: "Git",
+    color: "teal",
+    borderColor: "teal",
+  },
+  {
+    id: 15,
+    title: "PostgreSQL",
+    color: "pink",
+    borderColor: "pink",
+  },
+  {
+    id: 16,
+    title: "Prisma",
+    color: "violet",
+    borderColor: "violet",
+  },
+  {
+    id: 17,
+    title: "Zustand/ RTK",
+    color: "purple",
+    borderColor: "purple",
+  },
+  {
+    id: 18,
+    title: "Linux",
+    color: "Lime",
+    borderColor: "Lime",
+  },
+  {
+    id: 19,
+    title: "Docker",
+    color: "yellow",
+    borderColor: "yellow",
+  },
+  {
+    id: 20,
+    title: "TRPC",
+    color: "lightBlue",
+    borderColor: "lightBlue",
+  },
+  {
+    id: 21,
+    title: "NestJS",
+    color: "pink",
+    borderColor: "pink",
+  },
+];
+
+
+interface Project {
+  id: string;
+  type: "Project";
+  name: string;
+  description: string;
+  homepage?: string | undefined;
+  github: string;
+  icon: string;
+  image: string;
+  repo: string;
+  techstack: Techstack[];
+}
+
+interface Techstack {
+  id: string;
+  type: "Techstack";
+  label: string;
+}
+
+export const allProjects: Project[] = [
+  {
+    id: "1",
+    type: "Project",
+    name: "Queue Overflow",
+    description: "A place where you can ask questions and give answers",
+    homepage: "https://queueoverflow-pro.vercel.app/",
+    github: "https://github.com/piyushyadav0191/Queue-Overflow",
+    icon: "/images/projects/icons/queue.png",
+    image: "/images/projects/queue.png",
+    repo: "Queue-Overflow",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS + TS + Node",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "TailwindCSS",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "Shadcn UI",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Server Actions",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "MongoDB",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "Clerk",
+      },
+      {
+        id: "7",
+        type: "Techstack",
+        label: "Web hooks",
+      },
+    ],
+  },
+  {
+    id: "2",
+    type: "Project",
+    name: "Reform",
+    description:
+      "Create and share form easily with beautiful webflow prototype feature",
+    homepage: "https://reform-rosy.vercel.app",
+    github: "https://github.com/piyushyadav0191/Reform",
+    icon: "/images/projects/icons/reform.png",
+    image: "/images/projects/reform.png",
+    repo: "Reform",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS + TS + Node",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "TailwindCSS",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "DnD Kit",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Server Actions",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "Vercel Postgres",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "Prisma",
+      },
+    ],
+  },
+  {
+    id: "3",
+    type: "Project",
+    name: "Quesgen Pro",
+    description:
+      "QuesGen Pro is a platform designed to facilitate the taking of tests, whether they are multiple-choice (MCQ) or open-ended questions, with the assistance of AI.",
+    homepage: "https://quesgen-pro.vercel.app/",
+    github: "https://github.com/piyushyadav0191/QuesGen-Pro",
+    icon: "/images/projects/icons/edit.png",
+    image: "/images/projects/quesgen.png",
+    repo: "QuesGen-Pro",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS + TS + Node",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "TailwindCSS",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "Shadcn UI",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Framer motion",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "GraphQL",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "OpenAI",
+      },
+      {
+        id: "7",
+        type: "Techstack",
+        label: "Prisma",
+      },
+      {
+        id: "8",
+        type: "Techstack",
+        label: "Sanity",
+      },
+    ],
+  },
+  {
+    id: "4",
+    type: "Project",
+    name: "Issues tracker",
+    description: "Create and track your issues easily with this application.",
+    homepage: "https://issues-tracker-sand.vercel.app/",
+    github: "https://github.com/piyushyadav0191/issues-tracker",
+    icon: "/images/projects/icons/bug.png",
+    image: "/images/projects/issues.png",
+    repo: "issues-tracker",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS + TS + Node",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "Prisma",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "Tailwind CSS",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Next Auth",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "Sentry",
+      },
+    ],
+  },
+  {
+    id: "5",
+    type: "Project",
+    name: "Whatsapp Clone",
+    description:
+      "Whatsapp clone with all features from individual chats to group chat and chat to video call",
+    homepage: "https://whatsapp-clone-fs.vercel.app/login",
+    github: "https://github.com/piyushyadav0191/Full-Stack-Whatsapp-Clone",
+    icon: "/images/projects/icons/chat.png",
+    image: "/images/projects/whatsapp.png",
+    repo: "Full-Stack-Whatsapp-Clone",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "ReactJS",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "NodeJS",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "MongoDB",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Socket.io",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "WebRTC",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "Redux Toolkit",
+      },
+    ],
+  },
+  {
+    id: "6",
+    type: "Project",
+    name: "Modern Ecommerce",
+    description: "E commerce website made with latest tech",
+    homepage: "https://next-ecommerce-puce-five.vercel.app/",
+    github: "https://github.com/piyushyadav0191/Modern-E-Commerce-site",
+    icon: "/images/projects/icons/shop.png",
+    image: "/images/projects/ecommerce.png",
+    repo: "Modern-E-Commerce-site",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS + TS + Node",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "Stripe",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "Zustand",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "TailwindCSS",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "Framer motion",
+      },
+    ],
+  },
+  {
+    id: "7",
+    type: "Project",
+    name: "Modern Blog",
+    description:
+      "A blog app built with Next.js and Sanity.io would be a web application that utilizes the benefits of both technologies to create a dynamic and easily maintainable blog",
+    homepage: "https://blogwithsanity-piyushyadav0191.vercel.app/",
+    github: "https://github.com/piyushyadav0191/full-stack-next-blog",
+    icon: "/images/projects/icons/blog.png",
+    image: "/images/projects/blog.png",
+    repo: "full-stack-next-blog",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS + TS + Node",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "Sanity.io",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "TailwindCSS",
+      },
+    ],
+  },
+  {
+    id: "8",
+    type: "Project",
+    name: "Code with us Editor",
+    description:
+      "Where you can Write your code with your friends with syncing feature and compile your code with given compiler",
+    homepage: "https://codewithus.vercel.app/",
+    github: "https://github.com/piyushyadav0191/Code-with-us-Editor",
+    icon: "/images/projects/icons/code.png",
+    image: "/images/projects/code.png",
+    repo: "Code-with-us-Editor",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "ReactJS",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "NodeJS",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "SocketIO",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Express",
+      },
+    ],
+  },
+  {
+    id: "9",
+    type: "Project",
+    name: "Dashboard for Ecommerce",
+    description: "Dashbaord to manage your ecommerce website with all features",
+    homepage: "https://my-eccomerce-dashboard.netlify.app/",
+    github: "https://github.com/piyushyadav0191/e-commerce-dashboard",
+    icon: "/images/projects/icons/dashboard.png",
+    image: "/images/projects/dashboard.png",
+    repo: "e-commerce-dashboard",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "ReactJS",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "NodeJS",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "MongoDB",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Express",
+      },
+    ],
+  },
+  {
+    id: "10",
+    type: "Project",
+    name: "Darking Horse",
+    description: "Colorful Dark theme for Vs code",
+    homepage:
+      "https://marketplace.visualstudio.com/items?itemName=piyush-yadav-india.darking-horse",
+    github: "https://github.com/piyushyadav0191/Darking-horse",
+    icon: "/images/projects/icons/theme.png",
+    image: "/images/projects/theme.png",
+    repo: "Darking-horse",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "Vs Code",
+      },
+    ],
+  },
+  {
+    id: "11",
+    type: "Project",
+    name: "Share here",
+    description:
+      "Shared is a comment system which you can use to add it in your blog or any website where you need comments, reviews etc.",
+    homepage: "https://shared-client.vercel.app/",
+    github: "https://github.com/piyushyadav0191/share-here",
+    icon: "/images/projects/icons/comment.png",
+    image: "/images/projects/comment.png",
+    repo: "share-here",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS + TS",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "NodeJS",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "MongoDB",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Express",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "Zustand",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "TailwindCSS",
+      },
+    ],
+  },
+];
+
+export const experiences = [
+  {
+    title: "SDE - I",
+    company: "Codemate",
+    date: "Nov 2023 - Present",
+    description: [
+      "Leveraged the Full stack technologies to engineer efficient, reusable, and reliable software solutions.",
+      "Partnered with diverse teams to conceptualize, design, and implement new features, ensuring seamless integration and adherence to high-quality code standards.",
+      "Actively participated in code reviews, offering constructive feedback to bolster code quality, maintainability, and scalability.",
+    ],
+    location: "Noida, UP,India",
+    link: { url: "https://www.codemate.ai/", label: "codemate" },
+    logo: "/images/exp/codemate.webp",
+  },
+  {
+    title: "Full Stack Intern",
+    company: "One oath",
+    date: "July 2023 - October 2023",
+    description: [
+      "Spearheaded the development of microservices and user interface components, resulting in a 30% increase in user engagement for the client’s personality development system",
+      "Developed a CI/CD workflow to automatically perform a set of actions daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues",
+      "Collaborated closely with the AI core team to strategically integrate Python backend components, ensuring the seamless operation of critical system functions",
+    ],
+    location: "Remote (West Bengal, India)",
+    link: { url: "/", label: "one oath" },
+    logo: "/images/exp/oath.webp",
+  },
+  {
+    title: "Web Developer Intern",
+    company: "AAA Intergalactic – Infrastructure",
+    date: "April 2023 – July 2023",
+    description: [
+      "Orchestrated the creation of static websites for clients, accompanied by the development of microservices for seamlesswebsite operation.",
+      "Played a pivotal role in shaping architecture plans, UI designs, and feature development, contributing to a 15% increase in project success rate.",
+      "Led the creation of static websites and seamless microservices, resulting in a 20% reduction in project timelines, enhancing client satisfaction and delivery efficiency.",
+    ],
+    location: "Remote (South Africa)",
+    link: {
+      url: "https://www.aaa-intergalactic-infrastructure.com/",
+      label: "AAA",
+    },
+    logo: "/images/exp/aaa.jpeg",
+  },
+];
+
+export const siteMetadata = {
+  experience: {
+    education: [
+      {
+        schoolName: "Barkatullah University Institute of Technology",
+        degree: "Bachelor of Technology",
+        description:
+          "Barkatullah University Institute of Technology is a public engineering college located in Bhopal, Madhya Pradesh, India. It is one of the 15 government engineering colleges in Madhya Pradesh.",
+        startDate: "2020",
+        endDate: "2024",
+        typeofDegree: "Bachelor Degree",
+      },
+    ],
+  },
+};
+
+export const allBlogs = [
+  {
+    _id: 1,
+    link: "https://medium.com/stackademic/how-to-create-custom-cursor-in-nextjs-13-no-extra-packages-060369a736c9",
+    title: "How to create Custom Cursor in Nextjs 13 (No Extra Packages)",
+    summary:
+      "In this blog, we will explore the exciting world of custom cursors in Next.js 13. I will walk you through the steps to create...",
+    imageSrc: "/images/blog/cursor.jpg",
+    date: "2023-10-15T00:00:00Z",
+  },
+  {
+    _id: 2,
+    link: "https://blog.stackademic.com/building-a-dynamic-graphql-api-with-apollo-server-and-mongodb-a-comprehensive-guide-8cd1d3506485",
+    title: "Building a Dynamic GraphQL API with Apollo Server and MongoDB",
+    summary:
+      "In the world of modern web development, GraphQL has gained significant popularity for its flexibility and efficiency in data fetching...",
+    imageSrc: "/images/blog/graph.jpg",
+    date: "2023-09-30T00:00:00Z",
+  },
+  {
+    _id: 3,
+    link: "https://medium.com/@piyushyadav0191/my-cool-modern-tech-stack-for-2023-d49c5e1f8fe0",
+    title: "My Cool Modern Tech Stack for 2023",
+    summary:
+      "Step into the future with me as we unveil the secrets of “My Cool Tech Stack for 2023”! Get ready to embark on an exciting journey through...",
+    imageSrc: "/images/blog/tech.jpg",
+    date: "2023-07-22T00:00:00Z",
+  },
+  {
+    _id: 4,
+    link: "https://medium.com/@piyushyadav0191/setup-graphql-server-with-nodejs-tutorial-3c73eefeb93c",
+    title: "Setup Graphql Server with Nodejs [Tutorial]",
+    summary:
+      "In today’s rapidly evolving world of web development, GraphQL has emerged as a powerful alternative to traditional RESTful APIs...",
+    imageSrc: "/images/blog/graph1.webp",
+    date: "2023-06-10T00:00:00Z",
+  },
+  {
+    _id: 5,
+    link: "https://medium.com/@piyushyadav0191/my-final-thoughts-on-using-go-and-nodejs-in-backend-development-6e4b6c0cc2ee",
+    title: "My Final thoughts on using Go and Nodejs in Backend Development",
+    summary:
+      "When it comes to backend development, developers are often faced with the dilemma of choosing the right programming language...",
+    imageSrc: "/images/blog/go.jpg",
+    date: "2023-06-04T00:00:00Z",
+  },
+
+  {
+    _id: 6,
+    link: "https://medium.com/@piyushyadav0191/my-favourite-way-to-fetch-data-in-nextjs-typescript-be8e2f1eea95",
+    title: "My Favourite way to fetch data in Nextjs + Typescript",
+    summary:
+      "As a developer, I’ve found that choosing the right way to fetch data is critical to creating performant and maintainable...",
+    imageSrc: "/images/blog/next.jpg",
+    date: "2023-05-26T00:00:00Z",
+  },
+];
+
+
+## WHO AM I
+
+I'm a full-stack developer in [India](https://maps.app.goo.gl/JSbQSpLmKjax8Ghx5). I am creative and passionate about design and technology so I always try to craft great-looking software products.
+
+Before getting into software development, I wanted to make some real time Web Applications. When I started programming my first Applications, I realized what my real passion was and started learning more about software development.
+
+When not coding, I like to watch TV shows and movies, play some games with friends or hang out with them. I'm also **listening to music** most of the time. According to Spotify Wrapped, I listened to 989 minutes of music in 2023 and 3047 in 2022. 😁
+
+I consider myself a curious and inquisitive person, so on my spare time I like to work on [side projects](/projects), try to contribute to open source software and aim to constantly learn something new to improve my skillset.
+
+And last but not least, please don't hesitate to [contact me](/contact)!
+
+## Links
+
+- [Instagram](https://instagram.com/piyush.0191)
+- [Linkedin](https://linkedin.com/in/piyushyadav0191)
+- [GitHub](https://github.com/piyushyadav0191)
+
+
+## Coding
+
+<ItemGrid
+  items={[
+    {
+      image: "/images/uses/arch.png",
+      name: "Arch Linux",
+      description: "Operating System",
+      url: "https://archlinux.org/",
+    },
+    {
+      image: "/images/uses/vscode.png",
+      name: "Visual Studio Code",
+      description: "Editor",
+      url: "https://code.visualstudio.com/",
+    },
+    {
+      image: "/images/uses/theme.png",
+      name: "Poimandres Theme",
+      description: "VSCode Theme",
+      url: "https://marketplace.visualstudio.com/items?itemName=pmndrs.pmndrs",
+    },
+    {
+      image: "/images/uses/terminal.png",
+      name: "Hyper",
+      description: "Terminal",
+      url: "https://github.com/alacritty/alacritty",
+    },
+    {
+      image: "/images/uses/psql.png",
+      name: "PostgreSQL",
+      description: "database",
+      url: "https://postgresql.org",
+    },
+    {
+      image: "/images/uses/cloudflare.png",
+      name: "Cloudflare",
+      description: "DNS",
+      url: "https://www.cloudflare.com/",
+    },
+    {
+      image: "/images/uses/docker.png",
+      name: "Docker",
+      description: "Containerization",
+      url: "https://www.docker.com/",
+    },
+    {
+      image: "/images/uses/bruno.png",
+      name: "Bruno",
+      description: "Http Client",
+      url: "https://usebruno.com/",
+    },
+    {
+      image: "/images/uses/dbms.png",
+      name: "TablePlus",
+      description: "DBMS",
+      url: "https://tableplus.com/",
+    },
+  ]}
+/>
+
+## Software
+
+<ItemGrid
+  items={[
+    {
+      image: "/images/uses/canva.png",
+      name: "Canva",
+      description: "Graphic Design tool",
+      url: "https://www.canva.com",
+    },
+    {
+      image: "/images/uses/figma.png",
+      name: "Figma",
+      description: "Design tool",
+      url: "https://www.figma.com",
+    },
+    {
+      image: "/images/uses/spotify.png",
+      name: "Spotify",
+      description: "Digital music service",
+      url: "https://spotify.com",
+    },
+    {
+      image: "/images/uses/postman.png",
+      name: "Postman",
+      description: "API platform",
+      url: "https://www.postman.com/",
+    },
+    {
+      image: "/images/uses/obs.png",
+      name: "OBS",
+      description: "Open Broadcaster Software",
+      url: "https://obsproject.com/",
+    },
+    {
+      image: "/images/uses/1password.png",
+      name: "1Password",
+      description: "Password manager",
+      url: "https://1password.com/",
+    },
+    {
+      image: "/images/uses/raycast.png",
+      name: "Raycast",
+      description: "Productivity tool",
+      url: "https://www.raycast.com/",
+    },
+    {
+      image: "/images/uses/parallels-desktop.png",
+      name: "Parallels Desktop",
+      description: "Virtual machine",
+      url: "https://www.parallels.com/",
+    },
+    {
+      image: "/images/uses/discord.png",
+      name: "Discord",
+      description: "Communication",
+      url: "https://discord.com/",
+    },
+    {
+      image: "/images/uses/keka.png",
+      name: "Keka",
+      description: "File archiver",
+      url: "https://www.keka.io/en/",
+    },
+  ]}
+/>
