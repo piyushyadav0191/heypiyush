@@ -169,7 +169,7 @@ export const FOOTER_LINKS: FooterLinks = [
         title: "LinkedIn",
       },
       {
-        href: "https://www.instagram.com/piyush.0191/",
+        href: "https://www.instagram.com/iim.piyush/",
         title: "Instagram",
       },
       {
@@ -195,7 +195,7 @@ export const HERO_LINKS: HeroLinks = [
     id: "instagram",
     label: "Instagram",
     icon: <IconBrandInstagram size={28} />,
-    href: "https://www.instagram.com/piyush.0191/",
+    href: "https://www.instagram.com/iim.piyush/",
   },
   {
     id: "linkedin",

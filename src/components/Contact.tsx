@@ -123,7 +123,7 @@ const Contact = () => {
               )}
             </a>
             <a
-              href="https://instagram.com/piyush.0191"
+              href="https://instagram.com/iim.piyush"
               target="_blank"
               rel="noreferrer"
               className="hover:text-gray-200"
