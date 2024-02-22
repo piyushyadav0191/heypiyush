@@ -21,6 +21,64 @@ export const allProjects: Project[] = [
   {
     id: "1",
     type: "Project",
+    name: "AI Formulator",
+    description: "Create your forms in seconds with the help of AI",
+    homepage: "https://aiformulator.vercel.app/",
+    github: "https://github.com/piyushyadav0191/AI-Formulator",
+    icon: "/images/projects/icons/blog.png",
+    image: "/images/projects/formulator.png",
+    repo: "AI-Formulator",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS + TS + Node",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "TailwindCSS",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "Shadcn UI",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Next Auth",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "Open AI",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "Drizzle",
+      },
+      {
+        id: "7",
+        type: "Techstack",
+        label: "PostgreSQL",
+      },
+      {
+        id: "8",
+        type: "Techstack",
+        label: "Stripe",
+      },
+      {
+        id: "9",
+        type: "Techstack",
+        label: "Plausible",
+      },
+    ],
+  },
+  {
+    id: "2",
+    type: "Project",
     name: "Farewello",
     description: "Holiday management for mid-sized Organization",
     homepage: "https://farewello.vercel.app/",
@@ -53,7 +111,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "2",
+    id: "3",
     type: "Project",
     name: "Reform",
     description:
@@ -98,7 +156,7 @@ export const allProjects: Project[] = [
   },
   
   {
-    id: "3",
+    id: "4",
     type: "Project",
     name: "Quesgen Pro",
     description:
@@ -152,7 +210,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     type: "Project",
     name: "Issues tracker",
     description: "Create and track your issues easily with this application.",
@@ -190,7 +248,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     type: "Project",
     name: "Queue Overflow",
     description: "A place where you can ask questions and give answers",
@@ -238,7 +296,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "6",
+    id: "7",
     type: "Project",
     name: "Whatsapp Clone",
     description:
@@ -282,7 +340,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "7",
+    id: "8",
     type: "Project",
     name: "Modern Ecommerce",
     description: "E commerce website made with latest tech",
@@ -320,7 +378,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "8",
+    id: "9",
     type: "Project",
     name: "Modern Blog",
     description:
@@ -349,7 +407,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "9",
+    id: "10",
     type: "Project",
     name: "Code with us Editor",
     description:
@@ -383,7 +441,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "10",
+    id: "11",
     type: "Project",
     name: "Dashboard for Ecommerce",
     description: "Dashbaord to manage your ecommerce website with all features",
@@ -416,7 +474,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "11",
+    id: "12",
     type: "Project",
     name: "Darking Horse",
     description: "Colorful Dark theme for Vs code",
@@ -435,7 +493,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "12",
+    id: "13",
     type: "Project",
     name: "Share here",
     description:
