@@ -39,13 +39,6 @@ const BlogPostMainPage = (props: any) => {
         >
           <div className="absolute inset-px -z-20 rounded-[inherit] bg-background" />
           <Link href={link} target="_blank">
-            <Image
-              src={imageSrc}
-              className="rounded-lg"
-              width={1200}
-              height={630}
-              alt={title}
-            />
             <div className="grow space-y-4">
               <h2 className="text-xl font-bold">{title}</h2>
               <div className="text-muted-foreground">{summary}</div>
