@@ -108,8 +108,8 @@ export const HEADER_LINKS: HeaderLinks = [
   },
   {
     icon: <IconDeviceDesktop size={14} />,
-    href: "/uses",
-    text: "Uses",
+    href: "/goals",
+    text: "Goals",
   },
   {
     icon: <IconAddressBook size={14} />,
