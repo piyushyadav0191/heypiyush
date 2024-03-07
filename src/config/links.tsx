@@ -9,7 +9,8 @@ import {
   IconMessageCircle,
   IconPencil,
   IconUserCircle,
-  IconAddressBook
+  IconAddressBook,
+  IconTargetArrow
 } from "@tabler/icons-react";
 
 /**
@@ -82,9 +83,9 @@ type FooterLinks = Array<{
 
 export const HEADER_LINKS: HeaderLinks = [
   {
-    icon: <IconPencil size={14} />,
-    href: "/blog",
-    text: "Blog",
+    icon: <IconUserCircle size={14} />,
+    href: "/about",
+    text: "About",
   },
   {
     icon: <IconMessageCircle size={14} />,
@@ -102,12 +103,12 @@ export const HEADER_LINKS: HeaderLinks = [
     text: "Experience",
   },
   {
-    icon: <IconUserCircle size={14} />,
-    href: "/about",
-    text: "About",
-  },
+    icon: <IconPencil size={14} />,
+    href: "/blog",
+    text: "Blog",
+  },  
   {
-    icon: <IconDeviceDesktop size={14} />,
+    icon: <IconTargetArrow size={14} />,
     href: "/goals",
     text: "Goals",
   },
@@ -127,12 +128,12 @@ export const FOOTER_LINKS: FooterLinks = [
         title: "Home",
       },
       {
-        href: "/blog",
-        title: "Blog",
-      },
-      {
         href: "/about",
         title: "About",
+      },
+      {
+        href: "/blog",
+        title: "Blog",
       },
       {
         href: "/contact",
@@ -148,8 +149,8 @@ export const FOOTER_LINKS: FooterLinks = [
         title: "Guestbook",
       },
       {
-        href: "/uses",
-        title: "Uses",
+        href: "/goals",
+        title: "Goals",
       },
       {
         href: "/projects",
