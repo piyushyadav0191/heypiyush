@@ -1,7 +1,7 @@
 export const AllSkills = [
   {
     id: 1,
-    title: "NextJS 13",
+    title: "NextJS",
     color: "rose",
     borderColor: "rose",
   },
@@ -120,8 +120,8 @@ export const AllSkills = [
     borderColor: "lightBlue",
   },
   {
-    id: 21,
-    title: "NestJS",
+    id: 22,
+    title: "Flask",
     color: "pink",
     borderColor: "pink",
   },
