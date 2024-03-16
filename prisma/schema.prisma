@@ -17,6 +17,7 @@ model guestbook {
   updated_at DateTime @updatedAt
 }
 
+
 model Post {
   id        String   @id @default(cuid())
   createdAt DateTime @default(now())
