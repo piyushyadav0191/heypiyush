@@ -43,7 +43,6 @@
     "node_modules",
     "coverage"
   ],
-  // "extends": "@tszhong0411/tsconfig/web.json",
   "include": [
     "next-env.d.ts",
     "**/*.tsx",
