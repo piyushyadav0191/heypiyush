@@ -16,9 +16,6 @@
         "name": "next"
       }
     ],
-    "types": [
-      "vitest/globals"
-    ],
     "lib": [
       "dom",
       "dom.iterable",
