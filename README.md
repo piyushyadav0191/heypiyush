@@ -1,4 +1,4 @@
-# Heypiyush
+![Portfolio](https://i.ibb.co/qmqwYqN/main.png)
 
 Welcome to my personal Portfolio repository! This repository houses the code for my portfolio website. Feel free to explore and get inspired.
 
@@ -36,16 +36,14 @@ Welcome to my personal Portfolio repository! This repository houses the code for
 Follow these steps to run the project locally on your machine:
 
 ```bash
-git clone https://github.com/piyushyadav0191/heypiyush.git
-cd heypiyush
-corepack enable
-yarn install
+git clone https://github.com/piyushyadav0191/heypiyush.git && cd heypiyush
+pnpm i
 ```
 
 Create a `.env` file based on the provided `.env.example` file and fill in the necessary variables.
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 The app will become available at `http://localhost:3000`.
