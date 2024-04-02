@@ -107,11 +107,11 @@ export const HEADER_LINKS: HeaderLinks = [
     href: "/blog",
     text: "Blog",
   },  
-  {
-    icon: <IconTargetArrow size={14} />,
-    href: "/goals",
-    text: "Goals",
-  },
+  // {
+  //   icon: <IconTargetArrow size={14} />,
+  //   href: "/goals",
+  //   text: "Goals",
+  // },
   {
     icon: <IconAddressBook size={14} />,
     href: "/contact",
