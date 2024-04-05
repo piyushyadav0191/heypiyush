@@ -10,9 +10,16 @@ import Link from "next/link";
 import { IconArrowRight } from "@tabler/icons-react";
 
 export const metadata: Metadata = {
+  title: "Home | Techloom Solutions",
+  robots: {index: true, follow: true},
+    description:
+    "Piyush Yadav is a full-stack developer in India. He is creative and passionate about design and technology so he always try to craft great-looking software products.",
   alternates: {
     canonical: site.url,
   },
+  verification: {
+      google: "ZVHdpcOY8zg5DAQZlbsfA-mNf9A8KxgWqtSMBmi_PV4"
+    }
 };
 
 export const runtime = "edge";
