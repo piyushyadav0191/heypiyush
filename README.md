@@ -10,7 +10,6 @@ Welcome to my personal Portfolio repository! This repository houses the code for
 - 📝 MDX + Contentlayer
 - 🎨 Tailwind CSS - for styling
 - 🌈 Radix UI - accessible UI components
-- 🛡 Strict TypeScript and ESLint configuration
 - 📚 JSDoc comments for all functions
 - 📱 Responsive design
 - 🌗 Dark mode
@@ -18,16 +17,11 @@ Welcome to my personal Portfolio repository! This repository houses the code for
 - 📰 RSS feed
 - ✅ Pagination - Guestbook
 - 🗺 Sitemap
-- 📊 Umami Analytics
 - 🔎 Blog post search
 - 🎨 Animation - using Framer Motion
-- 🤖 GitHub Actions for CI/CD
 - 🏠 LightHouse score of nearly 100
-- 🧪 Vitest - unit and integration tests
 - ☂️ Codecov - code coverage
-- ✅ Conventional commit lint - make sure commit messages follow the conventional commit format
 - 🔒 NextAuth.js - authentication
-- 💄 Prettier - code formatting
 - ◮ Prisma - ORM
 - 👷🏻‍♂️ t3-env - validate environment variables before building
 
