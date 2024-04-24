@@ -26,8 +26,8 @@ export const allProjects: Project[] = [
     homepage: "",
     github: "https://github.com/piyushyadav0191/Research-PDFs-Decoder",
     icon: "/images/projects/icons/blog.png",
-    image: "/images/projects/formulator.png",
-    repo: "AI-Formulator",
+    image: "/images/projects/pdf.png",
+    repo: "Research-PDFs-Decoder",
     techstack: [
       {
         id: "1",
@@ -79,7 +79,7 @@ export const allProjects: Project[] = [
     homepage: "https://keep-draw.vercel.app/",
     github: "https://github.com/piyushyadav0191/KeepDraw",
     icon: "/images/projects/icons/farewello.png",
-    image: "/images/projects/farewello.png",
+    image: "/images/projects/draw.png",
     repo: "keepDraw",
     techstack: [
       {
@@ -137,7 +137,7 @@ export const allProjects: Project[] = [
     homepage: "https://aiformulator.vercel.app/",
     github: "https://github.com/piyushyadav0191/AI-Formulator",
     icon: "/images/projects/icons/reform.png",
-    image: "/images/projects/reform.png",
+    image: "/images/projects/formulator.png",
     repo: "AI-Formulator",
     techstack: [
       {
