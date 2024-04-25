@@ -98,11 +98,6 @@ export const HEADER_LINKS: HeaderLinks = [
     text: "Projects",
   },
   {
-    icon: <IconExposure size={14} />,
-    href: "/experience",
-    text: "Experience",
-  },
-  {
     icon: <IconPencil size={14} />,
     href: "/blog",
     text: "Blog",
@@ -170,7 +165,7 @@ export const FOOTER_LINKS: FooterLinks = [
         title: "LinkedIn",
       },
       {
-        href: "https://www.instagram.com/iim.piyush/",
+        href: "https://www.instagram.com/blackstone.nim/",
         title: "Instagram",
       },
       {
@@ -196,7 +191,7 @@ export const HERO_LINKS: HeroLinks = [
     id: "instagram",
     label: "Instagram",
     icon: <IconBrandInstagram size={28} />,
-    href: "https://www.instagram.com/iim.piyush/",
+    href: "https://www.instagram.com/blackstone.nim/",
   },
   {
     id: "linkedin",

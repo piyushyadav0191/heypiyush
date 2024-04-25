@@ -118,7 +118,7 @@ const CommandMenu = () => {
         {
           title: "Instagram",
           icon: <IconBrandInstagram size={16} className="mr-2" />,
-          onSelect: () => openLink("https://instagram.com/iim.piyush/"),
+          onSelect: () => openLink("https://instagram.com/blackstone.nim/"),
         },
         {
           title: "Medium",

@@ -7,8 +7,8 @@ const Skills = () => {
      <div className='my-16 '>
       <h2 className='mb-8 text-3xl font-bold'>Skills</h2>
      {AllSkills.map((skill) => (
-      <div className='mr-2 mt-2 inline-block'>
-      <Badge key={skill.id} title={skill.title} id={skill.id} color={skill.color} borderColor={skill.borderColor}  />
+      <div className='mr-2 mt-2 inline-block' key={skill.id}>
+      <Badge title={skill.title} id={skill.id} color={skill.color} borderColor={skill.borderColor}  />
       </div>
      ))}
     </div>

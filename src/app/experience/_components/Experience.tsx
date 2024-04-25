@@ -1,9 +1,4 @@
 "use client";
-
-import { experiences, siteMetadata } from "@/content/AllExperience";
-import { Card } from "./Card";
-import Image from "next/image";
-import { IconLink } from "@tabler/icons-react";
 import React from "react";
 
 const Experience = () => {
