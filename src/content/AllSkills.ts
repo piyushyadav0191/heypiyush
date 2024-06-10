@@ -120,9 +120,33 @@ export const AllSkills = [
     borderColor: "lightBlue",
   },
   {
-    id: 22,
-    title: "Flask",
+    id: 21,
+    title: "FastAPI",
     color: "pink",
     borderColor: "pink",
+  },
+  {
+    id: 22,
+    title: "MySQL",
+    color: "purple",
+    borderColor: "purple",
+  },
+  {
+    id: 23,
+    title: "Azure",
+    color: "zinc",
+    borderColor: "zinc",
+  },
+  {
+    id: 24,
+    title: "Jest",
+    color: "teal",
+    borderColor: "teal",
+  },
+  {
+    id: 25,
+    title: "Redis",
+    color: "rose",
+    borderColor: "rose",
   },
 ];

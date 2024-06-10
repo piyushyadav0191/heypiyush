@@ -1,12 +1,13 @@
 export const experiences = [
   {
-    title: "SDE - I",
+    title: "Software Engineer",
     company: "Codemate",
     date: "Nov 2023 - Present",
     description: [
-      "Leveraged the Full stack technologies to engineer efficient, reusable, and reliable software solutions.",
-      "Partnered with diverse teams to conceptualize, design, and implement new features, ensuring seamless integration and adherence to high-quality code standards.",
-      "Actively participated in code reviews, offering constructive feedback to bolster code quality, maintainability, and scalability.",
+      "Led the design and development of full-stack services for the Tech Innovation Group, enhancing system functionality and reliability using Next.js, Node.js, Langchain, Flask, Azure and Redis.",
+      "Designed and implemented user-friendly dashboards, integrating front-end interfaces with Generative AI models and ensuring seamless back-end functionality, driving substantial user engagement and satisfaction",
+      "Collaborated with cross-functional teams to gather system requirements, balance workloads, and oversee the end-to-end software development lifecycle from implementation to deployment.",
+      "Established robust CI/CD pipelines, conducted pull requests, and performed code reviews, ensuring high standards of code quality, scalability, and maintainability through rigorous testing (unit, integration, and end-to-end testing).",
     ],
     location: "Noida, UP,India",
     link: { url: "https://www.codemate.ai/", label: "codemate" },
@@ -17,7 +18,7 @@ export const experiences = [
     company: "One oath",
     date: "July 2023 - October 2023",
     description: [
-      "Spearheaded the development of microservices and user interface components, resulting in a 30% increase in user engagement for the client’s personality development system",
+      "Spearheaded the development of microservices using Node.js, Python, Open AI for the client’s personality development system.",
       "Developed a CI/CD workflow to automatically perform a set of actions daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues",
       "Collaborated closely with the AI core team to strategically integrate Python backend components, ensuring the seamless operation of critical system functions",
     ],
