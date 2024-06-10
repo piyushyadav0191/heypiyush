@@ -11,17 +11,20 @@ const Experience = () => {
       <div className="prose prose-neutral dark:prose-invert">
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Codemate</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          SDE - I - Full Stack Engineer - Nov 2023 - Present
+          Software Engineer - Full Stack Engineer - Nov 2023 - Present
         </p>
         <ul>
           <li>
-          Designed and implemented full-stack services using Node.js, Flask, and Azure, enhancing the functionality and reliability of the system
+          Led the design and development of full-stack services for the Tech Innovation Group, enhancing system functionality and reliability using Next.js, Node.js, Langchain, Flask, Azure and Redis.
           </li>
           <li>
-          Collaborated with cross-functional teams to create a user-friendly dashboard, integrating front-end with OpenAI and ensuring seamless back-end functionality.
+          Designed and implemented user-friendly dashboards, integrating front-end interfaces with Generative AI models and ensuring seamless back-end functionality, driving substantial user engagement and satisfaction.
           </li>
           <li>
-          Conducted regular code reviews, providing constructive feedback to maintain high code quality standards, and ensuring scalability and maintainability
+          Collaborated with cross-functional teams to gather system requirements, balance workloads, and oversee the end-to-end software development lifecycle from implementation to deployment.
+          </li>
+          <li>
+          Established robust CI/CD pipelines, conducted pull requests, and performed code reviews, ensuring high standards of code quality, scalability, and maintainability through rigorous testing (unit, integration, and end-to-end testing).
           </li>
         </ul>
       
@@ -32,7 +35,7 @@ const Experience = () => {
         </p>
         <ul>
           <li>
-          Spearheaded the development of microservices and user interface components, resulting in a 30% increase in user engagement for the client’s personality development system.
+        Spearheaded the development of microservices using Node.js, Python, Open AI for the client’s personality development system.
           </li>
           <li>
           Developed a CI/CD workflow to automatically perform a set of actions daily on a product in development in order to decrease time needed for team members to identify and fix bugs/issues.
