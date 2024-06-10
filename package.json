@@ -4,6 +4,25 @@
   "version": "0.0.0",
   "description": "My personal website and blog built with TypeScript, Next.js, and Tailwind CSS",
   "type": "module",
+  "author": {
+    "name": "Piyush Yadav",
+    "email": "piyushyadav0191@gmail.com",
+    "url": "https://ypiyush.tech"
+  },
+  "license": "MIT",
+  "homepage": "https://ypiyush.tech",
+  "keywords": [
+    "portfolio",
+    "website",
+    "blog",
+    "typescript",
+    "next.js",
+    "tailwindcss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piyushyadav0191/heypiyush"
+  },
   "scripts": {
     "build": "npx prisma db push && next build",
     "generate": "npx tsx ./scripts/generate.ts",
@@ -15,7 +34,7 @@
     "@datastax/astra-db-ts": "^0.1.4",
     "@giscus/react": "^2.3.0",
     "@langchain/community": "^0.0.29",
-    "@langchain/core": "^0.1.28",
+    "@langchain/core": "^0.1.20",
     "@langchain/openai": "^0.0.13",
     "@octokit/rest": "^20.0.2",
     "@prisma/client": "^5.5.2",
@@ -101,9 +120,6 @@
     "tailwindcss": "^3.3.5",
     "tsx": "^4.7.1",
     "typescript": "5.2.2"
-  },
-  "overrides": {
-    "@langchain/core": "0.1.20"
   },
   "engines": {
     "node": ">= 16.9.0"
