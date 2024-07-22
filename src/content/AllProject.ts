@@ -21,6 +21,160 @@ export const allProjects: Project[] = [
   {
     id: "1",
     type: "Project",
+    name: "Medium",
+    description: "Full stack Native app + Admin Dashboard to Publish your Courses + Live Courses + All Feature a App should have",
+    homepage: "",
+    github: "https://github.com/piyushyadav0191/medium",
+    icon: "/images/projects/icons/blog.png",
+    image: "/images/projects/medium.jpg",
+    repo: "medium",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "React Native",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "Typescript",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "NodeJS",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Express",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "Nextjs",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "Redux",
+      },
+      {
+        id: "7",
+        type: "Techstack",
+        label: "MongoDB",
+      },
+    ],
+  },
+  {
+    id: "2",
+    type: "Project",
+    name: "Practitioner",
+    description: "Prepare with our expert-led mock interviews and get personalized feedback to land your dream job.",
+    homepage: "https://practitioner-interview.vercel.app/",
+    github: "hhttps://github.com/piyushyadav0191/Practitioner",
+    icon: "/images/projects/icons/blog.png",
+    image: "/images/projects/prac.png",
+    repo: "Practitioner",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "Nextjs",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "Google Speech API",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "NodeJS",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Express",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "Drizzle ORM",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "Tailwind CSS",
+      },
+      {
+        id: "7",
+        type: "Techstack",
+        label: "PostgreSQL",
+      },
+      {
+        id: "8",
+        type: "Techstack",
+        label: "Gemini AI",
+      },
+    ],
+  },
+  {
+    id: "3",
+    type: "Project",
+    name: "ToJSON",
+    description: "The Easiest way to communicate with your any Data with any Data type with the help of AI. We convert your Important data to JSON format. ",
+    homepage: "https://to-json.vercel.app/",
+    github: "https://github.com/piyushyadav0191/To-JSON",
+    icon: "/images/projects/icons/blog.png",
+    image: "/images/projects/json.png",
+    repo: "To-JSON",
+    techstack: [
+      {
+        id: "1",
+        type: "Techstack",
+        label: "NextJS",
+      },
+      {
+        id: "2",
+        type: "Techstack",
+        label: "Typescript",
+      },
+      {
+        id: "3",
+        type: "Techstack",
+        label: "NodeJS",
+      },
+      {
+        id: "4",
+        type: "Techstack",
+        label: "Express",
+      },
+      {
+        id: "5",
+        type: "Techstack",
+        label: "Clerk",
+      },
+      {
+        id: "6",
+        type: "Techstack",
+        label: "Replicate AI",
+      },
+      {
+        id: "7",
+        type: "Techstack",
+        label: "langchain",
+      },
+      {
+        id: "8",
+        type: "Techstack",
+        label: "Redis",
+      },
+    ],
+  },
+  {
+    id: "4",
+    type: "Project",
     name: "Research PDFs Decoder",
     description: "Research Pdf Decoder is a Full Stack side project which focus on extracting important notes from any Research papers PDF. It also capable of chatting with PDFs",
     homepage: "",
@@ -72,7 +226,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "2",
+    id: "5",
     type: "Project",
     name: "keepDraw",
     description: "KeepDraw is a typescript powered Full Stack Application where user can create real time Boards and draw on it with their organization's members",
@@ -130,7 +284,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "3",
+    id: "6",
     type: "Project",
     name: "AI Formulator",
     description: "Create your forms in seconds with the help of AI",
@@ -188,7 +342,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "4",
+    id: "7",
     type: "Project",
     name: "Reform",
     description:
@@ -233,7 +387,7 @@ export const allProjects: Project[] = [
   },
   
   {
-    id: "5",
+    id: "8",
     type: "Project",
     name: "Quesgen Pro",
     description:
@@ -287,45 +441,7 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    id: "6",
-    type: "Project",
-    name: "Issues tracker",
-    description: "Create and track your issues easily with this application.",
-    homepage: "https://issues-tracker-sand.vercel.app/",
-    github: "https://github.com/piyushyadav0191/issues-tracker",
-    icon: "/images/projects/icons/bug.png",
-    image: "/images/projects/issues.png",
-    repo: "issues-tracker",
-    techstack: [
-      {
-        id: "1",
-        type: "Techstack",
-        label: "NextJS + TS + Node",
-      },
-      {
-        id: "2",
-        type: "Techstack",
-        label: "Prisma",
-      },
-      {
-        id: "3",
-        type: "Techstack",
-        label: "Tailwind CSS",
-      },
-      {
-        id: "4",
-        type: "Techstack",
-        label: "Next Auth",
-      },
-      {
-        id: "5",
-        type: "Techstack",
-        label: "Sentry",
-      },
-    ],
-  },
-  {
-    id: "7",
+    id: "9",
     type: "Project",
     name: "Code with us Editor",
     description:

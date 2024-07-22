@@ -11,7 +11,7 @@ const Experience = () => {
       <div className="prose prose-neutral dark:prose-invert">
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Codemate</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Software Engineer - Full Stack Engineer - Nov 2023 - Present
+          Software Engineer - Full Stack Engineer - Oct 2023 - Present
         </p>
         <ul>
           <li>
@@ -31,7 +31,7 @@ const Experience = () => {
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">One Oath</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Full Stack Developer Intern - July 2023 - Oct 2023
+          Full Stack Developer Intern - June 2023 - Oct 2023
         </p>
         <ul>
           <li>
@@ -47,7 +47,7 @@ const Experience = () => {
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">AAA Intergalactic – Infrastructure</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-        Web Developer Intern - April 2023 - July 2023
+        Web Developer Intern - March 2023 - June 2023
         </p>
         <ul>
           <li>
