@@ -26,7 +26,7 @@ export const allProjects: Project[] = [
     homepage: "",
     github: "https://github.com/piyushyadav0191/medium",
     icon: "/images/projects/icons/blog.png",
-    image: "/images/projects/medium.jpg",
+    image: "/images/projects/Med.jpg",
     repo: "medium",
     techstack: [
       {
