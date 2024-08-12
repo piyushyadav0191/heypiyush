@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "new-portfolio",
-  "version": "0.0.0",
+  "name": "heypiyush",
+  "version": "0.1.0",
   "description": "My personal website and blog built with TypeScript, Next.js, and Tailwind CSS",
   "type": "module",
   "author": {
