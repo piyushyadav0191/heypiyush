@@ -160,7 +160,7 @@ const RootLayout = (props: RootLayoutProps) => {
             alt="Gradient background"
             priority
           />
-{/*            <AIChatButton /> */}
+          <AIChatButton /> 
         </Providers>
       </body>
     </html>

@@ -5,12 +5,9 @@ import { usePathname } from "next/navigation";
 
 import { HEADER_LINKS } from "@/config/links";
 import cn from "@/utils/cn";
-import AIChatButton from "./chatbot/AIChatButton";
 
 const Navbar = () => {
   const pathname = usePathname();
-
-  // create me an isActive variable when i am on route that is equal to the link
 
   return (
     <ul className="hidden space-x-2 md:flex">

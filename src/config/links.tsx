@@ -3,8 +3,6 @@ import {
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandMedium,
-  IconDeviceDesktop,
-  IconExposure,
   IconFlame,
   IconMessageCircle,
   IconPencil,

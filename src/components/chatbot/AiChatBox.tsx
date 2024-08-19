@@ -111,7 +111,7 @@ const AiChatBox = ({ onClose, open }: Props) => {
           <button
             type="submit"
             className="flex items-center justify-center w-18 flex-none disabled:opacity-50"
-            disabled={isLoading || input === ''}
+            disabled={input.length === 0}
             title="Submit message"
           >
             <SendHorizonal size={24} />

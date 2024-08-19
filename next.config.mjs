@@ -3,9 +3,6 @@ import { withContentlayer } from "next-contentlayer";
 // eslint-disable-next-line jsdoc/check-tag-names
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverActions: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -25,16 +22,6 @@ const nextConfig = {
     };
 
     return config;
-  },
-
-  async redirects() {
-    return [
-      {
-        source: "/pc-specs",
-        destination: "/uses",
-        permanent: true,
-      },
-    ];
   },
 
   async headers() {

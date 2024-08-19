@@ -1,8 +1,8 @@
 "use client"
 
 import Link from "next/link";
-import * as animationData from '@/utils/contact-animation.json'
-import Lottie from 'react-lottie';
+import animationData from '@/utils/contact-animation.json'
+import Lottie from 'lottie-react';
 
 
 const Contact = () => {
@@ -11,9 +11,6 @@ const Contact = () => {
     loop: true,
     autoplay: true, 
     animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
   };
 
 
@@ -79,7 +76,9 @@ const Contact = () => {
 
   <div className="hidden md:flex">
     <Lottie
-      options={defaultOptions}
+      animationData={animationData}
+      autoplay={true}
+      loop={true}
       height={400}
       width={400}
     />
