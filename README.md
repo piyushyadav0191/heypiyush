@@ -44,7 +44,7 @@ The app will become available at `http://localhost:3000`.
 
 ## AI Chatbot configuration
 - Get your Gemini API from here `https://aistudio.google.com/app/apikey`
-- Replace your Data with my Data present in src/texts/info.txt
+- Replace my data with your Data present in src/texts/info.txt
 - Replace my Name with yours on Line no. 78 in src/app/api/chat/route.ts
 - Run `bun run generate`
 
