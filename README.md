@@ -4,7 +4,7 @@ Welcome to my personal Portfolio repository! This repository houses the code for
 
 ## ✨ Features
 
-- ⚡️ Next.js 13.5.2 with App Router
+- ⚡️ Next.js 14.2.0 with App Router
 - 🤖 AI powered Bot
 - 👆 Redis
 - 📝 MDX + Contentlayer
@@ -31,7 +31,7 @@ Follow these steps to run the project locally on your machine:
 
 ```bash
 git clone https://github.com/piyushyadav0191/heypiyush.git && cd heypiyush
-pnpm i
+bun i 
 ```
 
 Create a `.env` file based on the provided `.env.example` file and fill in the necessary variables.
