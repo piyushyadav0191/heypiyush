@@ -36,9 +36,10 @@ bun i
 
 Create a `.env` file based on the provided `.env.example` file and fill in the necessary variables.
 
-```bash
-Run bun run generate && npx prisma db push on your terminal
-```
+
+- Run `bun run generate && npx prisma db push` on your terminal
+
+- run app on local host by running `bun run dev`
 
 The app will become available at `http://localhost:3000`.
 
