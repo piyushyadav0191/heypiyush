@@ -91,8 +91,8 @@ const GuestbookPage = async ({ searchParams }: { searchParams: { [key: string]: 
       />
       <div className='mx-auto max-w-lg'>
         <Pinned />
-        {!user && <SignIn />}
-        {user && <Form user={user} />}
+        {!user && <SignIn />} 
+        {user && <Form user={user} />} 
         {entries.map((message: any) => {
           return (
             <Messages
