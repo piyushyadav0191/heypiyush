@@ -4,13 +4,12 @@ Welcome to my personal Portfolio repository! This repository houses the code for
 
 ## ✨ Features
 
-- ⚡️ Next.js 14.2.0 with App Router
+- ⚡️ Next.js 14.2.5 with App Router
 - 🤖 AI powered Bot
 - 👆 Redis
 - 📝 MDX + Contentlayer
 - 🎨 Tailwind CSS - for styling
 - 🌈 Radix UI - accessible UI components
-- 📚 JSDoc comments for all functions
 - 📱 Responsive design
 - 🌗 Dark mode
 - 📈 SEO optimized with meta tags and JSON-LD
@@ -19,8 +18,7 @@ Welcome to my personal Portfolio repository! This repository houses the code for
 - 🗺 Sitemap
 - 🔎 Blog post search
 - 🎨 Animation - using Framer Motion
-- 🏠 LightHouse score of nearly 100
-- ☂️ Codecov - code coverage
+- 🏠 Page Insights - 98 Performance, 94 Accessibility, 100 SEO
 - 🔒 NextAuth.js - authentication
 - ◮ Prisma - ORM
 - 👷🏻‍♂️ t3-env - validate environment variables before building
