@@ -13,7 +13,7 @@ export const env = createEnv({
     SPOTIFY_CLIENT_ID: z.string().min(5),
     SPOTIFY_CLIENT_SECRET: z.string().min(5),
     SPOTIFY_REFRESH_TOKEN: z.string().min(5),
-    NEXTAUTH_SECRET: z.string().min(5).max(15),
+    NEXTAUTH_SECRET: z.string().min(5),
     NEXTAUTH_URL: z.string().min(5).url(),
     OAUTH_CLIENT_KEY: z.string().min(5),
     OAUTH_CLIENT_SECRET: z.string().min(5),
