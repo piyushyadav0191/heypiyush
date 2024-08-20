@@ -1,22 +1,28 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import {Bot} from "lucide-react"
-import AiChatBox from "./AiChatBox"
+import { Bot } from "lucide-react";
+import AiChatBox from "./AiChatBox";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
-type Props = {}
+type Props = {};
 
 const AIChatButton = (props: Props) => {
-    const [chatboxOpen, setChatBoxOpen] = useState(false)
   return (
-    <div className="fixed bottom-0 right-0 mb-8 mr-8">
-
-    <button onClick={() => setChatBoxOpen(true)}>
-        <Bot size={45} />
-    </button>
-    <AiChatBox open={chatboxOpen} onClose={() => setChatBoxOpen(false)} />
+    <div>
+      <Sheet>
+        <SheetTrigger className="fixed bottom-0 right-0 mb-8 mr-8">
+          <Bot size={45} />
+        </SheetTrigger>
+        <SheetContent  className=" w-[390px] rounded border bg-background shadow-xl">
+          <AiChatBox />
+        </SheetContent>
+      </Sheet>
     </div>
-  )
-}
+  );
+};
 
-export default AIChatButton
+export default AIChatButton;
