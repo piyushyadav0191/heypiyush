@@ -145,7 +145,7 @@ const Form = (props: FormProps) => {
               layoutId={`popover-label-${uniqueId}`}
               className="text-sm"
             >
-              Add Note
+              You can write anything here
             </motion.span>
           </motion.button>
 
