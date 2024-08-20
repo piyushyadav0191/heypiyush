@@ -4,10 +4,11 @@ dotenv.config();
 import { AstraDBVectorStore } from "@langchain/community/vectorstores/astradb";
 import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import { DataAPIClient } from "@datastax/astra-db-ts";
+import { env } from "@/env";
 
-const endpoint = process.env.ASTRA_DB_ENDPOINT || "";
-const token = process.env.ASTRA_DB_APPLICATION_TOKEN || "";
-const collection = process.env.ASTRA_DB_COLLECTION || "";
+const endpoint = env.ASTRA_DB_ENDPOINT
+const token = env.ASTRA_DB_APPLICATION_TOKEN
+const collection = env.ASTRA_DB_COLLECTION
 
 if (!endpoint || !token || !collection) {
   throw new Error("please provide endpint token collection of astra");

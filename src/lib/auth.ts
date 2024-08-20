@@ -1,3 +1,4 @@
+import { env } from '@/env'
 import type { NextAuthConfig } from 'next-auth'
 import NextAuth from 'next-auth'
 import GithubProvider from 'next-auth/providers/github'
@@ -33,11 +34,11 @@ declare module 'next-auth' {
 }
 
 export const config: NextAuthConfig = {
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: env.NEXTAUTH_SECRET,
   providers: [
     GithubProvider({
-      clientId: process.env.OAUTH_CLIENT_KEY as string,
-      clientSecret: process.env.OAUTH_CLIENT_SECRET as string
+      clientId: env.OAUTH_CLIENT_KEY,
+      clientSecret: env.OAUTH_CLIENT_SECRET
     })
   ],
 
