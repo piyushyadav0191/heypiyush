@@ -196,7 +196,7 @@ const Form = (props: FormProps) => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   />
-                  <div key="close" className="px-4 py-5 flex justify-between mb-8">
+                  <div key="close" className="px-4 py-5 flex justify-between mb-14">
                     <button
                       type="button"
                       className="flex items-center"
