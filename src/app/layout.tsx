@@ -13,6 +13,7 @@ import cn from "@/utils/cn";
 import Providers from "./providers";
 import AIChatButton from "@/components/chatbot/AIChatButton";
 import CursorTrailCanvas from "@/components/cursor-trail-canvas";
+import FluidCursor from "@/components/fluir-cursor-canvas";
 
 
 /**
@@ -131,7 +132,8 @@ const RootLayout = (props: RootLayoutProps) => {
     >
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className="relative font-default no-select">
-      <CursorTrailCanvas className="pointer-events-none fixed inset-0 -z-10 h-full w-full" />
+      {/* <CursorTrailCanvas className="pointer-events-none fixed inset-0 -z-10 h-full w-full" /> */}
+      <FluidCursor />
         <Providers>
 
           <Header />
