@@ -132,7 +132,7 @@ const RootLayout = (props: RootLayoutProps) => {
       suppressHydrationWarning
     >
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className="relative font-default no-select">
+      <body className="relative font-default ">
         {/* <CursorTrailCanvas className="pointer-events-none fixed inset-0 -z-10 h-full w-full" /> */}
         <FluidCursor />
         <ScrollProgress  />

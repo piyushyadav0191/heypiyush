@@ -26,6 +26,7 @@ const HomePage = () => {
     <>
       <Hero />
       <Skills />
+      
       <Experience />
     </>
   );

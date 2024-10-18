@@ -85,7 +85,7 @@ export const AllSkills = [
   },
   {
     id: 15,
-    title: "PostgreSQL",
+    title: "SQL/NoSQL",
     color: "pink",
     borderColor: "pink",
   },
@@ -148,5 +148,35 @@ export const AllSkills = [
     title: "Redis",
     color: "rose",
     borderColor: "rose",
+  },
+  {
+    id: 26,
+    title: "NestJS",
+    color: "Lime",
+    borderColor: "Lime",
+  },
+  {
+    id: 27,
+    title: "Firebase",
+    color: "teal",
+    borderColor: "teal",
+  },
+  {
+    id: 28,
+    title: "Langchain",
+    color: "purple",
+    borderColor: "purple",
+  },
+  {
+    id: 29,
+    title: "DataStax/Chroma",
+    color: "red",
+    borderColor: "red",
+  },
+  {
+    id: 30,
+    title: "GenAI",
+    color: "indigo",
+    borderColor: "indigo",
   },
 ];
