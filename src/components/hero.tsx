@@ -22,10 +22,10 @@ const Hero = () => {
             </h1>
           </div>
           <h2 className='font-medium text-muted-foreground sm:text-lg'>
-            Student • Full-stack Developer
+            Software Engineer
           </h2>
           <p className='sm:text-lg'>
-            I am a student and a Passionate and creative Full Stack developer
+            I am a Passionate and creative Full Stack developer
             based in{' '}
             <Link
               href={
