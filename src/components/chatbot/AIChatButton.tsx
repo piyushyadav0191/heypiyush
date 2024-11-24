@@ -17,7 +17,7 @@ const AIChatButton = (props: Props) => {
         <SheetTrigger className="fixed bottom-0 right-0 mb-8 mr-8">
           <Bot size={45} />
         </SheetTrigger>
-        <SheetContent  className=" w-[390px] rounded border bg-background shadow-xl">
+        <SheetContent className=" md:w-[600px] rounded border bg-background shadow-xl">
           <AiChatBox />
         </SheetContent>
       </Sheet>

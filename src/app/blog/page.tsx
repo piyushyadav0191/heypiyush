@@ -3,8 +3,8 @@ import type { Metadata, ResolvingMetadata } from "next";
 import FilteredPosts from "@/components/filtered-posts";
 import PageTitle from "@/components/page-title";
 import site from "@/config/site";
-import { allBlogs } from "@/content/AllBlogs";
 import Pinned from "./pinned";
+import { getMediumPosts,  } from "@/utils/medium";
 
 export const runtime = "edge";
 const title = "Blog";
@@ -52,16 +52,20 @@ export const generateMetadata = async (
   };
 };
 
-const BlogPage = () => {
+
+
+const BlogPage = async () => {
+   const posts = await getMediumPosts();
+  //  const totalPosts = posts.length;
+
   return (
     <>
       <PageTitle
         title="Blog"
         description={`I started writing articles in December 2021, mainly about software and
-        sharing knowledge. I have written a total of 27 articles on
-        medium. You can search for articles by title in the search box below.`}
+        sharing knowledge. You can search for articles by title in the search box below.`}
       />
-      <FilteredPosts posts={allBlogs} />
+      <FilteredPosts posts={posts} />
       <div className="mt-10">
         <Pinned />
       </div>
