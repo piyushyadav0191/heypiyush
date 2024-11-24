@@ -14,21 +14,21 @@ type ProjectPageProps = {
   /**
    * The params of the URL.
    */
-  params: {
+  params: Promise<{
     /**
      * The slug of the URL.
      */
     id: number;
-  };
+  }>;
   /**
    * The search params of the URL.
    */
 };
 
-const ProjectPage = (props: ProjectPageProps) => {
-  const { id } = props.params;
+const ProjectPage = async (props: ProjectPageProps) => {
+  const { id } = (await props.params);
 
-  const project = allProjects.find((p) => p.id === id);
+  const project = allProjects.find((p) => p.id === id.toString());
 
   if (!project) {
     notFound();

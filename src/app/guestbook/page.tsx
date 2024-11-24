@@ -58,7 +58,10 @@ export const generateMetadata = async (
 
 export const dynamic = 'force-dynamic'
 
-const GuestbookPage = async ({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) => {
+const GuestbookPage = async (
+  props: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }
+) => {
+  const searchParams = await props.searchParams;
   const page = searchParams['page'] ?? '1'
   const per_page = searchParams['per_page'] ?? '5'
 
