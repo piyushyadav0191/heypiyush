@@ -86,11 +86,6 @@ export const HEADER_LINKS: HeaderLinks = [
     text: "About",
   },
   {
-    icon: <IconMessageCircle size={14} />,
-    href: "/guestbook",
-    text: "Guestbook",
-  },
-  {
     icon: <IconFlame size={14} />,
     href: "/projects",
     text: "Projects",
@@ -100,16 +95,12 @@ export const HEADER_LINKS: HeaderLinks = [
     href: "/blog",
     text: "Blog",
   },  
-  // {
-  //   icon: <IconTargetArrow size={14} />,
-  //   href: "/goals",
-  //   text: "Goals",
-  // },
   {
-    icon: <IconAddressBook size={14} />,
-    href: "/contact",
-    text: "Contact",
+    icon: <IconMessageCircle size={14} />,
+    href: "/guestbook",
+    text: "Guestbook",
   },
+
 ];
 
 export const FOOTER_LINKS: FooterLinks = [

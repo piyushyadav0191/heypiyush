@@ -26,6 +26,7 @@
   "scripts": {
     "generate": "npx tsx ./scripts/generate.ts",
     "build": "bun run generate && npx prisma db push && next build",
+    "build:test": "next build",
     "dev": "next dev --turbopack",
     "lint": "next lint",
     "start": "next start"
