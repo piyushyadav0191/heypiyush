@@ -154,7 +154,7 @@ export const FOOTER_LINKS: FooterLinks = [
         title: "LinkedIn",
       },
       {
-        href: "https://www.instagram.com/blackstone.nim/",
+        href: "https://www.instagram.com/1.601833988749894848203",
         title: "Instagram",
       },
       {
@@ -180,7 +180,7 @@ export const HERO_LINKS: HeroLinks = [
     id: "instagram",
     label: "Instagram",
     icon: <IconBrandInstagram size={28} />,
-    href: "https://www.instagram.com/blackstone.nim/",
+    href: "https://www.instagram.com/1.601833988749894848203",
   },
   {
     id: "linkedin",
