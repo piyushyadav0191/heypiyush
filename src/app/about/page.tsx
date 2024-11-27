@@ -4,7 +4,6 @@ import Mdx from '@/components/mdx'
 import PageTitle from '@/components/page-title'
 import site from '@/config/site'
 import getPage from '@/utils/get-page'
-import ImageContainer from '@/components/RandomImageContainer'
 
 export const runtime = 'edge'
 const title = 'About'
@@ -58,7 +57,7 @@ const AboutPage = () => {
   return (
     <>
       <PageTitle title='About' description='👋 Hi there! I am Piyush.' />
-      <ImageContainer />
+      {/* <ImageContainer /> */}
       <Mdx code={page.body.code} />
     </>
   )

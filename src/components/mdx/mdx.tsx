@@ -24,7 +24,7 @@ import Logo from './logo'
 import Pre from './pre'
 import Tree from './tree'
 import Video from './video'
-
+import ImageContainer from "./random-image"
 /**
  * The props of {@link Mdx}.
  */
@@ -77,7 +77,8 @@ const components: MDXComponents = {
   Tree,
   Video,
   LinkCard,
-  Logo
+  Logo,
+  ImageContainer
 }
 
 const Mdx = (props: MdxProps) => {
