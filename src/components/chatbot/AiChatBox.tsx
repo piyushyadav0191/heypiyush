@@ -1,11 +1,10 @@
 import cn from "@/utils/cn";
 import { useChat, Message } from "ai/react";
-import {  SendHorizonal, Trash } from "lucide-react";
+import { SendHorizonal, Trash } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
-
 
 const AiChatBox = () => {
   const {
@@ -18,20 +17,20 @@ const AiChatBox = () => {
     error,
   } = useChat();
 
-  const inputRef = useRef<HTMLInputElement>(null)
-  const scrollRef = useRef<HTMLDivElement>(null)
+  const inputRef = useRef<HTMLInputElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if(scrollRef.current){
-        scrollRef.current.scrollTop = scrollRef.current.scrollHeight
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
     }
-  }, [messages])
+  }, [messages]);
 
   useEffect(() => {
-        if(open){
-            inputRef.current?.focus()
-        }
-  }, [open])
+    if (open) {
+      inputRef.current?.focus();
+    }
+  }, [open]);
 
   const lastMessageIsUser = messages[messages.length - 1]?.role === "user";
 
@@ -124,7 +123,6 @@ type ChatMessageProps = {
 function ChatMessage({ message: { role, content } }: ChatMessageProps) {
   const isAiMessage = role === "assistant";
 
-
   return (
     <div
       className={cn(
@@ -134,18 +132,14 @@ function ChatMessage({ message: { role, content } }: ChatMessageProps) {
     >
       {isAiMessage && (
         // <Bot className="mr-2 flex-none" />
-        <Image
-        src={'/images/logo.png'}
-        width={45}
-        height={45}
-        alt='Piyush'
-      />  
-        ) 
-      }
+        <Image src={"/images/logo.png"} width={45} height={45} alt="Piyush" />
+      )}
       <div
         className={cn(
           "rounded-md border px-3 py-2",
-          isAiMessage ? "font-semibold hover:bg-opacity-10 border-2 hover:bg-rose-500 border-rose-600 border-opacity-50  bg-background" : "bg-foreground text-background"
+          isAiMessage
+            ? "font-semibold hover:bg-opacity-10 border-2 hover:bg-rose-500 border-rose-600 border-opacity-50  bg-background"
+            : "bg-foreground text-background"
         )}
       >
         <ReactMarkdown
