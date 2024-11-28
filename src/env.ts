@@ -17,8 +17,6 @@ export const env = createEnv({
     NEXTAUTH_URL: z.string().min(5).url(),
     OAUTH_CLIENT_KEY: z.string().min(5),
     OAUTH_CLIENT_SECRET: z.string().min(5),
-    GOOGLE_CLIENT_KEY: z.string().min(5),
-    GOOGLE_CLIENT_SECRET: z.string().min(5),
   },
   client: {},
   runtimeEnv: {
@@ -36,5 +34,6 @@ export const env = createEnv({
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
     OAUTH_CLIENT_KEY: process.env.OAUTH_CLIENT_KEY,
     OAUTH_CLIENT_SECRET: process.env.OAUTH_CLIENT_SECRET,
+   
   },
 });

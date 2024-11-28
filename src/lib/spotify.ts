@@ -1,14 +1,13 @@
-import { env } from "@/env"
+import { env } from "@/env";
 
+const CLIENT_ID = env.SPOTIFY_CLIENT_ID;
+const CLIENT_SECRET = env.SPOTIFY_CLIENT_SECRET;
+const REFRESH_TOKEN = env.SPOTIFY_REFRESH_TOKEN;
 
-const CLIENT_ID = env.SPOTIFY_CLIENT_ID
-const CLIENT_SECRET = env.SPOTIFY_CLIENT_SECRET
-const REFRESH_TOKEN = env.SPOTIFY_REFRESH_TOKEN
-
-const BASIC = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString('base64')
+const BASIC = Buffer.from(`${CLIENT_ID}:${CLIENT_SECRET}`).toString("base64");
 const NOW_PLAYING_ENDPOINT =
-  'https://api.spotify.com/v1/me/player/currently-playing'
-const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token'
+  "https://api.spotify.com/v1/me/player/currently-playing";
+const TOKEN_ENDPOINT = "https://accounts.spotify.com/api/token";
 
 /**
  * Get access token from Spotify API.
@@ -16,56 +15,56 @@ const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token'
  */
 const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
-    method: 'POST',
+    method: "POST",
     headers: {
       Authorization: `Basic ${BASIC}`,
-      'Content-Type': 'application/x-www-form-urlencoded'
+      "Content-Type": "application/x-www-form-urlencoded",
     },
     body: new URLSearchParams({
-      grant_type: 'refresh_token',
-      refresh_token: REFRESH_TOKEN
-    })
-  })
+      grant_type: "refresh_token",
+      refresh_token: REFRESH_TOKEN,
+    }),
+  });
 
-  const data = await response.json()
+  const data = await response.json();
 
-  return data.access_token as string
-}
+  return data.access_token as string;
+};
 
 /**
  * Get the current song playing on Spotify.
  * @returns The current song playing on Spotify.
  */
 const getNowPlaying = async () => {
-  const accessToken = await getAccessToken()
+  const accessToken = await getAccessToken();
 
   const response = await fetch(NOW_PLAYING_ENDPOINT, {
     headers: {
-      Authorization: `Bearer ${accessToken}`
+      Authorization: `Bearer ${accessToken}`,
     },
     next: {
-      revalidate: 60
-    }
-  })
+      revalidate: 60,
+    },
+  });
 
   if (response.status === 204) {
     return {
-      status: response.status
-    }
+      status: response.status,
+    };
   }
 
   try {
-    const song = await response.json()
+    const song = await response.json();
 
     return {
       status: response.status,
-      data: song
-    }
+      data: song,
+    };
   } catch {
     return {
-      status: response.status
-    }
+      status: response.status,
+    };
   }
-}
+};
 
-export default getNowPlaying
+export default getNowPlaying;
