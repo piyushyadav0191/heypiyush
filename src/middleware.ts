@@ -22,7 +22,6 @@ const middleware = () => {
   const response = NextResponse.next();
 
   response.headers.set("Content-Security-Policy", csp.replaceAll("\n", ""));
-
   return response;
 };
 

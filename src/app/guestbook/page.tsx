@@ -1,119 +1,104 @@
-import type { Metadata, ResolvingMetadata } from 'next'
+// page.tsx
+import type { Metadata, ResolvingMetadata } from "next";
+import { headers } from "next/headers";
+import PageTitle from "@/components/page-title";
+import site from "@/config/site";
+import Pinned from "./pinned";
+import GuestSlot from "./_global/guestslot";
+import { getServerSession } from "next-auth";
+import { authOptions } from "../api/auth/[...nextauth]/route";
+import prisma from "@/lib/prisma";
 
-import PageTitle from '@/components/page-title'
-import site from '@/config/site'
+const title = "Guestbook";
+const description = "Sign my guestbook and share your idea.";
 
-import Form from './form'
-import Messages from './messages'
-import Pinned from './pinned'
-import SignIn from './sign-in'
-import { getServerSession } from 'next-auth'
-import { authOptions } from '../api/auth/[...nextauth]/route'
-import prisma from '@/lib/prisma'
-import PaginationControls from '@/components/PaginationControls'
-
-const title = 'Guestbook'
-const description = 'Sign my guestbook and share your idea.'
-
-/**
- * The props of {@link GuestbookPage}.
- */
 type GuestbookPageProps = {
-  /**
-   * The params of the URL.
-   */
-  params: Record<string, never>
-  /**
-   * The search params of the URL.
-   */
-  searchParams: Record<string, never>
-}
+  params: Record<string, never>;
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 export const generateMetadata = async (
   _: GuestbookPageProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> => {
-  const previousOpenGraph = (await parent)?.openGraph ?? {}
-  const previousTwitter = (await parent)?.twitter ?? {}
+  const previousOpenGraph = (await parent)?.openGraph ?? {};
+  const previousTwitter = (await parent)?.twitter ?? {};
 
   return {
     title,
     description,
     alternates: {
-      canonical: `${site.url}/guestbook`
+      canonical: `${site.url}/guestbook`,
     },
     openGraph: {
       ...previousOpenGraph,
       url: `${site.url}/guestbook`,
       title,
-      description
+      description,
     },
     twitter: {
       ...previousTwitter,
       title,
-      description
-    }
-  }
-}
+      description,
+    },
+  };
+};
 
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
 
-const GuestbookPage = async (
-  props: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }
-) => {
-  const searchParams = await props.searchParams;
-  const page = searchParams['page'] ?? '1'
-  const per_page = searchParams['per_page'] ?? '5'
-
-  const start = (Number(page) - 1) * Number(per_page) // 0 5 10..
-  const end = start + Number(per_page) // 5 10 15..
-
-  const session = await getServerSession(authOptions)
-  const user = session?.user
+const GuestbookPage = async ({ searchParams }: GuestbookPageProps) => {
+  const session = await getServerSession(authOptions);
+  const user = session?.user;
   const messages = await prisma.guestbook.findMany({
     orderBy: {
-      created_at: 'desc'
+      created_at: "desc",
     },
     select: {
       body: true,
       created_at: true,
       created_by: true,
       image: true,
-      id: true
-    }
-  })
+      id: true,
+    },
+  });
 
-  const entries = messages.slice(start, end)
+  const headersList = await headers();
+  const pathname =
+    headersList.get("x-pathname") || headersList.get("x-invoke-path") || "";
+  const isGuestbookPage = pathname === "/guestbook";
 
+  let entries = messages;
+  let start = 0;
+  let end = messages.length;
+
+  // Only apply pagination if we're on the guestbook page
+  if (isGuestbookPage) {
+    const page = searchParams["page"] ?? "1";
+    const per_page = searchParams["per_page"] ?? "5";
+    start = (Number(page) - 1) * Number(per_page);
+    end = start + Number(per_page);
+    entries = messages.slice(start, end);
+  }
 
   return (
     <>
       <PageTitle
-        title='Guestbook'
-        description='You can tell me anything here!'
+        title="Guestbook"
+        description="You can tell me anything here!"
       />
-      <div className='mx-auto max-w-lg'>
+      <div className="mx-auto max-w-lg">
         <Pinned />
-        {!user && <SignIn />} 
-        {user && <Form user={user} />} 
-        {entries.map((message: any) => {
-          return (
-            <Messages
-              key={message.id}
-              body={message.body}
-              created_at={message.created_at}
-              created_by={message.created_by}
-              image={message.image}
-            />
-          )
-        })}
-        <div className='flex justify-center mt-6'>
-
-          <PaginationControls hasNextPage={end < messages.length} hasPrevPage={start > 0} />
-        </div>
+        <GuestSlot
+          user={user}
+          entries={entries}
+          start={start}
+          end={end}
+          messagesLength={messages.length}
+          showPagination={isGuestbookPage}
+        />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default GuestbookPage
+export default GuestbookPage;
