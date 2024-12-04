@@ -10,7 +10,7 @@ import {
   PromptTemplate,
 } from "@langchain/core/prompts";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
-import { getVectorStore } from "@/lib/astradb";
+import { getVectorStore } from "@/lib/pinecone";
 import { createRetrievalChain } from "langchain/chains/retrieval";
 import { AIMessage, HumanMessage } from "@langchain/core/messages";
 import { createHistoryAwareRetriever } from "langchain/chains/history_aware_retriever";

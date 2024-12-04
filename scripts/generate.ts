@@ -3,59 +3,34 @@ dotenv.config();
 
 import { DocumentInterface } from "@langchain/core/documents";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
-import { DirectoryLoader } from "langchain/document_loaders/fs/directory";
 import { TextLoader } from "langchain/document_loaders/fs/text";
-import { getEmbeddingCollection, getVectorStore } from "../src/lib/astradb";
 import { Redis } from "@upstash/redis";
+import { getVectorStore } from "@/lib/pinecone";
 
 async function generateEmbedding() {
   await Redis.fromEnv().flushdb();
   const vectorStore = await getVectorStore();
 
-  (await getEmbeddingCollection()).deleteMany({});
+  const loader = new TextLoader("src/texts/info.txt");
 
-  const loader = new DirectoryLoader(
-    "src",
-    {
-      // ".tsx": (path) => new TextLoader(path),
-      ".txt": (path) => new TextLoader(path),
-      // ".ts": (path) => new TextLoader(path)
-    },
-    true
-  );
+  const doc = await loader.load();
 
-  const docs = await (
-    await loader.load()
-  )
-    .filter(
-      (doc) => doc.metadata.source.endsWith(".txt")
-        // || doc.metadata.source.includes("page.tsx") 
-        // || doc.metadata.source.endsWith(".ts")
-    )
+  const processedDoc: DocumentInterface = {
+    pageContent: doc[0].pageContent.replace(/^\s*[\r]/gm, "").trim(),
+    metadata: { url: doc[0].metadata.source },
+  };
 
-    .map((doc): DocumentInterface => {
-      const url = doc.metadata.source;
-      //   .replace(/\\/g, "/")
-      //   .split("/src/app")[1]
-      //   .split("/page.")[0] || "/";
+  // Create text splitter specifically for text content
+  const splitter = new RecursiveCharacterTextSplitter({
+    chunkSize: 1000,
+    chunkOverlap: 200,
+  });
 
-      const pageContentTrimmed = doc.pageContent
-        // .replace(/^import.*$/gm, "") // remove all import statement
-        // .replace(/ className=(["']).*?\1| className={.*?}/g, "") // remve cn
-        .replace(/^\s*[\r]/gm, "") // rmeove empty lines
-        .trim();
-
-      return {
-        pageContent: pageContentTrimmed,
-        metadata: { url },
-      };
-    });
-
-  const splitter = RecursiveCharacterTextSplitter.fromLanguage("html");
-
-  const splitDocs = await splitter.splitDocuments(docs);
-
+  const splitDocs = await splitter.splitDocuments([processedDoc]);
+  // console.log(splitDocs);
   await vectorStore.addDocuments(splitDocs);
+
+  console.log("completed");
 }
 
 generateEmbedding();
