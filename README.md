@@ -4,7 +4,7 @@ Welcome to my personal Portfolio repository! This repository houses the code for
 
 ## ✨ Features
 
-- ⚡️ Next.js 14.2.5 with App Router
+- ⚡️ Next.js 15 (App Router)
 - 🤖 AI powered Bot
 - 👆 Redis
 - 📝 MDX + Contentlayer
@@ -54,9 +54,8 @@ The app will become available at `http://localhost:3000`.
 ## Sites where you will get .env variables
 - DATABASE_URL="Get from railway.app, supabase, neon.tech or any postgres provision services"
 - GOOGLE_API_KEY="https://aistudio.google.com/app/apikey"
-- ASTRA_DB_ENDPOINT="https://astra.datastax.com/"
-- ASTRA_DB_APPLICATION_TOKEN="https://astra.datastax.com/"
-- ASTRA_DB_COLLECTION="embeddings" 
+- PINECONE_API_KEY="app.pinecone.io/"
+- PINECONE_INDEX_NAME="app.pinecone.io/"
 - UPSTASH_REDIS_REST_URL="https://console.upstash.com/redis"
 - UPSTASH_REDIS_REST_TOKEN="https://console.upstash.com/redis"
 - SPOTIFY_CLIENT_ID=""
