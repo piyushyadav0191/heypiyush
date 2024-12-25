@@ -14,7 +14,7 @@ import { getVectorStore } from "@/lib/pinecone";
 import { createRetrievalChain } from "langchain/chains/retrieval";
 import { AIMessage, HumanMessage } from "@langchain/core/messages";
 import { createHistoryAwareRetriever } from "langchain/chains/history_aware_retriever";
-import { UpstashRedisCache } from "langchain/cache/upstash_redis";
+import { UpstashRedisCache } from "@langchain/community/caches/upstash_redis";
 import { Redis } from "@upstash/redis";
 
 export async function POST(req: Request) {
