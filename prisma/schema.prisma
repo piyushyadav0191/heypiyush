@@ -17,15 +17,6 @@ model guestbook {
   updated_at DateTime @updatedAt
 }
 
-
-model Post {
-  id        String   @id @default(cuid())
-  createdAt DateTime @default(now())
-  slug      String   @unique
-  likes     Int      @default(0)
-  views     Int      @default(0)
-}
-
 model Session {
   id        String   @id
   createdAt DateTime @default(now())
