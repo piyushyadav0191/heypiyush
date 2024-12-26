@@ -30,7 +30,7 @@ export function SkillsTree() {
               <p>Python</p>
             </File>
             <File value="23">
-              <p>Golang (Basic)</p>
+              <p>Golang</p>
             </File>
             <File value="24">
               <p>SQL</p>
