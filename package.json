@@ -32,7 +32,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@datastax/astra-db-ts": "^1.4.1",
     "@langchain/community": "^0.2.28",
     "@langchain/google-genai": "^0.0.26",
     "@langchain/pinecone": "^0.1.3",
