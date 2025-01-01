@@ -1,4 +1,5 @@
-![Portfolio](https://i.ibb.co/qmqwYqN/main.png)
+![Portfolio](https://github.com/user-attachments/assets/75349cda-0b05-4f6c-bbca-d982afdd4c48)
+
 
 Welcome to my personal Portfolio repository! This repository houses the code for my portfolio website. Feel free to explore and get inspired.
 
