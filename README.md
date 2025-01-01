@@ -42,6 +42,22 @@ Create a `.env` file based on the provided `.env.example` file and fill in the n
 
 The app will become available at `http://localhost:3000`.
 
+## 🐳 Docker Configuration
+
+To build and run the project using Docker, follow these steps:
+
+1. Build the Docker image:
+
+```bash
+docker build -t nextjs-app .
+```
+
+2. Run the Docker container:
+
+```bash
+docker run -p 80:80 nextjs-app
+```
+
 ## AI Chatbot configuration
 - Get your Gemini API from here `https://aistudio.google.com/app/apikey`
 - Replace my data with your Data present in src/texts/info.txt
