@@ -60,7 +60,7 @@ const Hero = () => {
               </div>
             </Cursor>
             <Image
-              src="https://i.ibb.co/9ZRJkgT/profile.jpg"
+              src="/images/profile.jpg"
               className="rounded-full"
               width={140}
               height={142}
@@ -72,7 +72,7 @@ const Hero = () => {
           <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-purple-700 to-orange-700 opacity-0 blur-2xl md:opacity-50" />
         </div>
       </div>
-
+     
       <div className="flex gap-6">
         {HERO_LINKS.map((link) => (
           <a
