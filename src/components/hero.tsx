@@ -60,7 +60,7 @@ const Hero = () => {
               </div>
             </Cursor>
             <Image
-              src="/images/profile.jpg"
+              src="https://i.ibb.co/9ZRJkgT/profile.jpg"
               className="rounded-full"
               width={140}
               height={142}
@@ -72,12 +72,7 @@ const Hero = () => {
           <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-purple-700 to-orange-700 opacity-0 blur-2xl md:opacity-50" />
         </div>
       </div>
-      {/* <div className="self-start border-none appearance-none relative inline-flex min-w-11 min-h-11 py-2 px-3 items-center gap-2 rounded-2.5 bg-accent text-white  font-bold text-xs ring-1 ring-inset ring-brand-600 hocus:ring-brand-700 dark:ring-brand-400 dark:hocus:ring-brand-300 transition no-underline hocus:shadow hocus:bg-accent-dark hocus:text-on-accent after:pointer-events-none after:select-none after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:rounded-[calc(0.625rem_-_0.0625rem)] after:m-px after:border-px after:border-white after:opacity-20 after:[mask:linear-gradient(to_bottom,_rgba(0,_0,_0,_1)_0%,_rgba(0,_0,_0,_0)_100%)] pr-3.5 justify-center max-mobile-lg:w-full mobile-lg:self-start mobile-lg:justify-start">
-        <span>
-          hello
-        </span>
-        <span>world</span>
-      </div> */}
+
       <div className="flex gap-6">
         {HERO_LINKS.map((link) => (
           <a
