@@ -58,27 +58,32 @@ docker build -t nextjs-app .
 docker run -p 80:80 nextjs-app
 ```
 
-## AI Chatbot configuration
-- Get your Gemini API from here `https://aistudio.google.com/app/apikey`
-- Replace my data with your Data present in src/texts/info.txt
-- Replace my Name with yours on Line no. 78 in src/app/api/chat/route.ts
-- Run `bun run generate`
+## AI Chatbot Configuration
+
+1. Obtain your Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+2. Replace my data with your data in `src/texts/info.txt`.
+3. Replace my name with yours on line 78 in `src/app/api/chat/route.ts`.
+4. Run the following command to generate:  
+   ```bash
+   bun run generate
+   ```
 
 ## Vercel Deployement
 - Push your all .env variables on github before building the project
 - Replace your Deployment url in .env variable named NEXTAUTH_URL
 
 ## Sites where you will get .env variables
-- DATABASE_URL="Get from railway.app, supabase, neon.tech or any postgres provision services"
-- GOOGLE_API_KEY="https://aistudio.google.com/app/apikey"
-- PINECONE_API_KEY="app.pinecone.io/"
-- PINECONE_INDEX_NAME="app.pinecone.io/"
-- UPSTASH_REDIS_REST_URL="https://console.upstash.com/redis"
-- UPSTASH_REDIS_REST_TOKEN="https://console.upstash.com/redis"
-- SPOTIFY_CLIENT_ID=""
-- SPOTIFY_CLIENT_SECRET=""
-- SPOTIFY_REFRESH_TOKEN=""
-- NEXTAUTH_SECRET="piyushisverycool"
-- NEXTAUTH_URL="http://localhost:3000"
-- OAUTH_CLIENT_KEY="github-client-key"
-- OAUTH_CLIENT_SECRET="https://github.com/settings/developers" create Oauth app 
+- `DATABASE_URL`: Get this from services like Railway.app, Supabase, Neon.tech, or any PostgreSQL provider.
+- `GOOGLE_API_KEY`: Obtain your API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
+- `PINECONE_API_KEY`: Get your API key from [Pinecone](https://app.pinecone.io/).
+- `PINECONE_INDEX_NAME`: Specify your index name from [Pinecone](https://app.pinecone.io/).
+- `UPSTASH_REDIS_REST_URL`: Retrieve the REST URL from [Upstash Redis Console](https://console.upstash.com/redis).
+- `UPSTASH_REDIS_REST_TOKEN`: Retrieve the REST token from [Upstash Redis Console](https://console.upstash.com/redis).
+- `SPOTIFY_CLIENT_ID`: Provide your Spotify client ID.
+- `SPOTIFY_CLIENT_SECRET`: Provide your Spotify client secret.
+- `SPOTIFY_REFRESH_TOKEN`: Provide your Spotify refresh token.
+- `NEXTAUTH_SECRET`: Example secret: `piyushisverycool`.
+- `NEXTAUTH_URL`: URL for your NextAuth instance, e.g., `http://localhost:3000`.
+- `OAUTH_CLIENT_KEY`: Your OAuth client key (e.g., for GitHub).
+- `OAUTH_CLIENT_SECRET`: Generate the OAuth client secret from [GitHub Developer Settings](https://github.com/settings/developers) after creating an OAuth app.
+
