@@ -30,7 +30,7 @@ const Experience = () => {
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">Techloom Solutions</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-          Founder - July 2024 – Present - Bhopal, MP
+          Founder - July 2024 – Present 
         </p>
         <ul>
           <li>
