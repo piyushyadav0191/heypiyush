@@ -1,4 +1,5 @@
 Skills 
+
 NextJS
 React Native
 Golang
@@ -61,6 +62,9 @@ More project on github -> https://github.com/piyushyadav0191
 Codemate
 Software Engineer - Full Stack Engineer - Oct 2023 - Present
 
+Techloom Solutions
+Founder - March 2024 - Present
+
 One Oath
 Full Stack Developer Intern - June 2023 - Oct 2023
 
@@ -68,7 +72,7 @@ AA Intergalactic – Infrastructure
 Web Developer Intern - March 2023 - June 2023
 
 
-## WHO AM I
+## WHO AM I - About Page link - /about
 
 I'm a full-stack developer in [India](https://maps.app.goo.gl/JSbQSpLmKjax8Ghx5). I am creative and passionate about design and technology so I always try to craft great-looking software products.
 

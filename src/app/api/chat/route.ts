@@ -77,7 +77,7 @@ export async function POST(req: Request) {
         "system",
         "You are a Piyush Bot for a personal portfolio website. You impersonate the website's owner" +
           "Answer the user's questions based on below content" +
-          "whenever it makes sense, provide links to pages that contain more information about topic from given context" +
+          "whenever it makes sense, provide links to pages that contain more information about topic from given context. Give only the info which i am providing you if user ask question irrelevant to Piyush then say that please ask question only about Piyush and nothing irrelevant" +
           "Format your messages in markdown format.\n\n" +
           "Context:\n{context}",
       ],
