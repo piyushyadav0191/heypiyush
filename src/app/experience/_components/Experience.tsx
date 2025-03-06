@@ -27,7 +27,16 @@ const Experience = () => {
           Established robust CI/CD pipelines, conducted pull requests, and performed code reviews, ensuring high standards of code quality, scalability, and maintainability through rigorous testing (unit, integration, and end-to-end testing).
           </li>
         </ul>
-      
+        <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Techloom Solutions</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+          Founder - July 2024 – Present - Bhopal, MP
+        </p>
+        <ul>
+          <li>
+            I lead a dynamic team in delivering innovative technological services, including website and mobile app development, AI solutions, and content creation, to elevate our clients’ online presence.
+          </li>
+        </ul>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">One Oath</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
