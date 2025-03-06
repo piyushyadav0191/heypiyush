@@ -9,7 +9,7 @@ const Experience = () => {
       </h2>
       <section>
       <div className="prose prose-neutral dark:prose-invert">
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Codemate</h2>
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">Codemate AI</h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
           Software Engineer - Full Stack Engineer - Sep 2023 - Present
         </p>
